@@ -234,11 +234,6 @@ footer {
 	}
 	*/
 
-
-	.section-title{
-		padding-top: 80%;
-	}
-
 	.nav-links {
 		flex-direction: column;
 		text-align: center;
@@ -256,9 +251,6 @@ footer {
 		display: none;
 	}
 
-	.hero{
-		margin-top: 80%;
-	}
 
 }
 .image{
@@ -534,3 +526,49 @@ img#agrandir:hover{
 	gap: 0.5rem;
 	margin-top: 0.5rem;
 }
+
+/* Styles pour le bouton hamburger */
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	position: fixed;
+	top: 15px;
+	right: 20px;
+	z-index: 1100;
+}
+
+.bar {
+	width: 30px;
+	height: 4px;
+	background-color: var(--text-color);
+	margin: 5px 0;
+	transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+	.menu-toggle {
+		display: flex;
+	}
+	.nav-links {
+		display: none;
+		flex-direction: column;
+		background-color: rgba(255, 255, 255, 0.95);
+		position: absolute;
+		top: 60px;
+		right: 20px;
+		width: 200px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		z-index: 1000;
+	}
+	.nav-links.active {
+		display: flex;
+	}
+	.navbar {
+		position: fixed;
+		width: 100%;
+		z-index: 1000;
+	}
+}
+
+
