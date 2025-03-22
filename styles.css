@@ -116,7 +116,7 @@ body {
 	gap: 2rem;
 }
 /* Cards */
-.about-card,.experience-card,.project-card,.CV-card,.other-card {
+.about-card,.experience-card,.project-card,.CV-card {
 	background-color: var(--section-bg);
 	padding: 2rem;
 	border-radius: 10px;
@@ -561,3 +561,48 @@ img#agrandir:hover{
 	}
 }
 
+/* Ajoute ces styles à la fin de ton fichier styles.css */
+
+.toggle-button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: var(--transition);
+}
+
+.toggle-button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-description {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: var(--transition);
+}
+
+.skill-description h2 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.skill-description p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.contour {
+	background-color: var(--section-bg);
+	padding: 2rem;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	transition: var(--transition);
+}

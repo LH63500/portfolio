@@ -124,236 +124,244 @@
                 <p><strong>Le pourcentage 100 %</strong> correspond à la moyenne maximale qu'un enseignant pourrait attribuer à un élève de 1er année en BUT R&T</p>
             </div>
             <div class="skills-grid">
+                <!-- Programmation -->
                 <div class="skills-category">
-                    <h3>Programmation</h3>
+                    <div class="contour">
+                        <h3>Programmation</h3>
+                        <br>
+                        <div class="skill-bar">
+                            <span class="tag">HTML/CSS</span>
+                            <h1>60%</h1>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 60%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleDescription('prog-desc')">Afficher plus</button>
+                            <div id="prog-desc" class="skill-description" style="display: none;">
+                                <div class="descript-grid">
+                                    <div>
+                                        <h2>Contexte</h2>
+                                        <p>En première année, j'ai été introduit aux bases du développement web, en particulier avec HTML et CSS, qui sont les langages fondamentaux pour créer et styliser des pages web.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Objectif</h2>
+                                        <p>L'objectif était de comprendre comment structurer une page web avec HTML et comment utiliser CSS pour la rendre visuellement attrayante et réactive avec les différentes balises à ma disposition.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Travaux</h2>
+                                        <p>Différentes évaluations notées. <br>Exemples : <br>Création visuelle d'un Sudoku en HTML et CSS <br>Projet Final : Portfolio en HTML et CSS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <br>
                     <div class="skill-bar">
-                        <span class="tag">HTML/CSS</span>
-                        <h1>60%</h1>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 60%"></div>
-                        </div>
-                        <div class="descript-grid">
-                            <div><h2>Contexte</h2>
-                                <p>En première année, j'ai été introduit aux bases du développement web, en particulier avec HTML et CSS, qui sont les langages fondamentaux pour créer et styliser des pages web.
-                                </p>
+                            <span class="tag">Python</span>
+                            <h1>80%</h1>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 80%"></div>
                             </div>
-                            <div>
-                                <h2>Objectif</h2>
-                                <p>L'objectif était de comprendre comment structurer une page web avec HTML et comment utiliser CSS pour la rendre visuellement attrayante et réactive avec les différentes balises à ma disposition.</p>
+                            <button class="toggle-button" onclick="toggleDescription('python-desc')">Afficher plus</button>
+                            <div id="python-desc" class="skill-description" style="display: none;">
+                                <div class="descript-grid">
+                                    <div>
+                                        <h2>Contexte</h2>
+                                        <p>La programmation est une compétence essentielle dans le domaine des réseaux et des télécommunications. Python est souvent utilisé pour automatiser des tâches et développer des scripts utiles.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Objectif</h2>
+                                        <p>L'objectif était d'acquérir une compréhension solide des concepts de base de la programmation, tels que les variables, les boucles, les conditions et les fonctions.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <h2>Travaux</h2>
-                                <p>Différentes évaluations notées. <br>Exemples : <br>Création visuelle d'un Sudoku en HTML et CSS <br>Projet Final : Portfolio en HTML et CSS</p>
-                            </div>
-                        </div>
-                <br>
-                <div class="skills-category">
-                    <div class="skill-bar">
-                        <span class="tag">Python</span>
-                        <h1>80%</h1>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%"></div>
-                        </div>
-                        <div class="descript-grid">
-                            <div><h2>Contexte</h2>
-                                <p>La programmation est une compétence essentielle dans le domaine des réseaux et des télécommunications. Python est souvent utilisé pour automatiser des tâches et développer des scripts utiles.
-                                </p>
-                            </div>
-                            <div>
-                                <h2>Objectif</h2>
-                                <p>L'objectif était d'acquérir une compréhension solide des concepts de base de la programmation, tels que les variables, les boucles, les conditions et les fonctions.
-
-                                </p>
-                            </div>
-                        </div>
                     </div>
                     <br>
-                    <div class="skills-category">
-                        <div class="skill-bar">
+                    <div class="skill-bar">
                             <span class="tag">Scripts et commandes sous Linux</span>
                             <h1>75%</h1>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 75%"></div>
                             </div>
-                            <div class="descript-grid">
-                                <div>
-                                    <h2>Contexte</h2>
-                                    <br>
-                                    <p>Durant de nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai acquis des compétences dans l'utilisation des commandes et des scripts Linux.
-                                    </p>
+                            <button class="toggle-button" onclick="toggleDescription('linux-desc')">Afficher plus</button>
+                            <div id="linux-desc" class="skill-description" style="display: none;">
+                                <div class="descript-grid">
+                                    <div>
+                                        <h2>Contexte</h2>
+                                        <p>Durant de nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai acquis des compétences dans l'utilisation des commandes et des scripts Linux.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Objectif</h2>
+                                        <p>L'objectif était de maîtriser l'utilisation des commandes Linux pour manipuler les fichiers (lister, modifier, créer, supprimer) et d'apprendre à créer des scripts BASH pour automatiser certaines tâches, tout en approfondissant mes connaissances sur le fonctionnement des systèmes d'exploitation et le traitement des données.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Travaux</h2>
+                                        <p>De nombreux travaux pratiques (TP) où j'ai dû réutiliser mes connaissances pour répondre à des séries de questions dans un compte rendu.</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h2>Objectif</h2>
-                                    <br>
-                                    <p>L'objectif était de maîtriser l'utilisation des commandes Linux pour manipuler les fichiers (lister, modifier, créer, supprimer) et d'apprendre à créer des scripts BASH pour automatiser certaines tâches, tout en approfondissant mes connaissances sur le fonctionnement des systèmes d'exploitation et le traitement des données.
-                                    </p>
-                                </div>
-                                <div>
-                                    <h2>Travaux</h2>
-                                    <br>
-                                    <p>De nombreux travaux pratiques (TP) où j'ai dû réutiliser mes connaisances pour répondre à des séries de questions dans un compte rendu.
-                                    </p>
-                                </div>
-                        </div>
-                        <br>
-                    <div class="skills-category">
+                            </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Réseaux -->
+                <div class="skills-category">
+                    <div class="contour">
                         <h3>Réseaux</h3>
                         <br>
-                    <div class="skill-bar">
-                        <span class="tag">Configuration d'un réseau informatique</span>
-                        <h1>65%</h1>
-                        <div class="progress-bar">
-                            
-                            <div class="progress" style="width: 65%"></div>
-                        </div>
-                        <div class="descript-grid">
-                            <div>
-                                <h2>Contexte</h2>
-                                <br>
-                                <p>Grâce à mes nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai acquis des compétences en utilisant initialement le logiciel Cisco Packet Tracer, puis en travaillant sur des équipements réels.
-                            </p>
-                            </div>
-                            <div>
-                                <h2>Objectif</h2>
-                                <br>
-                                <p>Le but était de maîtriser la configuration de divers appareils et services réseau (ordinateurs, switchs, routeurs, serveurs), d'apprendre à attribuer des adresses réseau correctement, d'utiliser différents protocoles de routage, de vérifier les connexions entre les appareils et de comprendre comment les interconnecter efficacement.
-                                </p>
-                            </div>
-                            <div>
-                                <h2>Travaux</h2>
-                                <br>
-                                <p>Pendant les TD et TP, j'ai commencé par utiliser Cisco Packet Tracer pour configurer divers appareils et services, attribuer des adresses réseau, utiliser plusieurs protocoles de routage, et tester les connexions pour m'assurer que tous les appareils puissent communiquer entre eux.
-
-                                    Ensuite, j'ai appliqué ces compétences en installant et configurant des routeurs et switchs Cisco, des points d'accès, et en configurant des ordinateurs sous Windows et Linux pour qu'ils fassent partie du même réseau et en mettant en place des VLANs.
-                                </p>
-                            </div>
-                    </div>
-                    <br>
-                    <div class="skill-bar">
-                        <span class="tag">Configuration de machines virtuels</span>
-                        <h1>70%</h1>
-                        <div class="progress-bar">
-                            
-                            <div class="progress" style="width: 70%"></div>
-                        </div>
-                        <div class="descript-grid">
-                            <div>
-                                <h2>Contexte</h2>
-                                <br>
-                                <p>Pendant de nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai développé des compétences dans l'installation et la gestion de machines virtuelles.
-
-                                </p>
-                            </div>
-                            <div>
-                                <h2>Objectif</h2>
-                                <br>
-                                <p>L'objectif était d'apprendre à configurer, installer et gérer des machines virtuelles sur différentes plateformes, ainsi qu'à maîtriser les techniques de sauvegarde, de clonage et les divers types de connexions réseau possibles.
-
-                                </p>
-                            </div>
-                            <div>
-                                <h2>Travaux</h2>
-                                <br>
-                                <p>Au cours des nombreuses séances de TP, j'ai configuré, installé et géré des machines virtuelles sur VMware et VirtualBox. J'ai appris à sauvegarder et cloner des machines virtuelles, et à utiliser différents types de connexions réseau (NAT, PONT, Réseau Privé, Pas de connexion).
-
-                                </p>
-                            </div>
-                    </div>
-                    <br>
-                    <div class="skills-category">
-                        <h3>Télécommunications</h3>
-                        <br>
-                    <div class="skill-bar">
-                        <span class="tag">Utilisation d'un oscilloscope</span>
-                        <h1>50%</h1>
-                        <div class="progress-bar">
-                            
-                            <div class="progress" style="width: 50%"></div>
-                        </div>
-                        <div class="descript-grid">
-                            <div>
-                                <h2>Contexte</h2>
-                                <br>
-                                <p>Pendant les travaux pratiques (TP) de télécommunications, j'ai appris à utiliser des oscilloscopes, notamment ceux des marques Keysight et Agilent.
-                                </p>
-                            </div>
-                            <div>
-                                <h2>Objectif</h2>
-                                <br>
-                                <p>L'objectif était d'apprendre à observer et analyser un ou plusieurs signaux simultanément pour en extraire des informations comme l'amplitude, la fréquence, et la durée à l'état haut. Je devais également maîtriser le réglage des échelles horizontales et verticales ainsi que l'utilisation de fonctions avancées telles que la transformée de Fourier rapide (FFT) pour observer le spectre d'un signal.
-                                </p>
-                            </div>
-                    </div>
-                    <br>
-                    <div class="skill-bar">
-                        <span class="tag">Utilisation d'un GBF (Générateur de fonction)</span>
-                        <h1>50%</h1>
-                        <div class="progress-bar">
-                            
-                            <div class="progress" style="width: 50%"></div>
-                        </div>
-                        <div class="descript-grid">
-                            <div>
-                                <h2>Contexte</h2>
-                                <br>
-                                <p>Pendant les travaux pratiques (TP) de télécommunications, j'ai appris à utiliser des générateurs de signaux (GBF) des marques Agilent et RIGOL.
-                                </p>
-                            </div>
-                            <div>
-                                <h2>Objectif</h2>
-                                <br>
-                                <p>L'objectif était de maîtriser la génération de signaux avec différentes amplitudes et fréquences et d'apprendre à utiliser diverses fonctions telles que le réglage de l'impédance, la modulation, et la fonction sweep.
-                                </p>
-                            </div>
-                    </div>
-                    </div>
-                
-                <h3 class="titlescomp">Qualités</h3>
-                <div class="skills-category">
-                    <h3>Altruiste</h3>
-                    <div class="skill-bar">
-                        <div class="descript-grid">
-                            <div><h1>Contexte</h1>
-                                <p>J'ai développé cette compétence altruiste dans le contexte de la réserve en Gendarmerie. <br>En effet, au sein de la réserve, j'ai été régulièrement confronté à des situations nécessitant une grande empathie et un sens profond de l'écoute. <br>Ces expériences m'ont appris à être attentif aux besoins des autres, à fournir un soutien approprié et à agir dans le meilleur intérêt de la communauté. Cela a renforcé ma capacité à rester calme et posé dans des situations stressantes, tout en assurant le bien-être et la sécurité des personnes que je sers. </p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                
-                <div class="skills-category">
-                    <h3>Sang Froid</h3>
-                    <div class="skill-bar">
-                        <div class="descript-grid">
-                            <div><h1>Contexte</h1>
-                                <p>J'ai développé cette compétence de sang-froid dans le contexte de la réserve en Gendarmerie. <br>En effet, lors de mes missions en tant que réserviste, j'ai souvent été confronté à des situations stressantes et imprévisibles. <br>Ces expériences m'ont permis d'apprendre à garder mon calme, à analyser rapidement la situation et à prendre des décisions réfléchies sous pression. Cette capacité à rester serein et à gérer efficacement des situations délicates est essentielle pour assurer la sécurité et le bien-être des citoyens, ainsi que pour accomplir les missions de manière professionnelle et efficace.</p>
-                            </div>
-                        </div>
-                    </div>   
-
-                    <div class="skills-category">
-                        <h3>Assiduité</h3>
                         <div class="skill-bar">
-                            <div class="descript-grid">
-                                <div><h1>Contexte</h1>
-                                    <p>L'assidiuté est une compétence essentielle, surtout dans ma vie professionnel. <br>Cette assidiuté m'est nécessaire, en effet à l'IUT des régles strictes sont régies concernant la présence de chaque étudiant en cours. <br>Plus précisément, par le biais du site "Odin", chaque absence est comptabilisées et doit être justifiées, au-delà de 2 absences non justifiées sur l’année , l’usager ne pourra ni être diplômé, ni passer en année supérieure, ni redoubler.</p>
+                            <span class="tag">Configuration d'un réseau informatique</span>
+                            <h1>65%</h1>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 65%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleDescription('network-desc')">Afficher plus</button>
+                            <div id="network-desc" class="skill-description" style="display: none;">
+                                <div class="descript-grid">
+                                    <div>
+                                        <h2>Contexte</h2>
+                                        <p>Grâce à mes nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai acquis des compétences en utilisant initialement le logiciel Cisco Packet Tracer, puis en travaillant sur des équipements réels.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Objectif</h2>
+                                        <p>Le but était de maîtriser la configuration de divers appareils et services réseau (ordinateurs, switchs, routeurs, serveurs), d'apprendre à attribuer des adresses réseau correctement, d'utiliser différents protocoles de routage, de vérifier les connexions entre les appareils et de comprendre comment les interconnecter efficacement.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Travaux</h2>
+                                        <p>Pendant les TD et TP, j'ai commencé par utiliser Cisco Packet Tracer pour configurer divers appareils et services, attribuer des adresses réseau, utiliser plusieurs protocoles de routage, et tester les connexions pour m'assurer que tous les appareils puissent communiquer entre eux.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>   
+                        </div>
+                    <br>
+                    <div class="skill-bar">
+                            <span class="tag">Configuration de machines virtuelles</span>
+                            <h1>70%</h1>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 70%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleDescription('vm-desc')">Afficher plus</button>
+                            <div id="vm-desc" class="skill-description" style="display: none;">
+                                <div class="descript-grid">
+                                    <div>
+                                        <h2>Contexte</h2>
+                                        <p>Pendant de nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai développé des compétences dans l'installation et la gestion de machines virtuelles.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Objectif</h2>
+                                        <p>L'objectif était d'apprendre à configurer, installer et gérer des machines virtuelles sur différentes plateformes, ainsi qu'à maîtriser les techniques de sauvegarde, de clonage et les divers types de connexions réseau possibles.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Travaux</h2>
+                                        <p>Au cours des nombreuses séances de TP, j'ai configuré, installé et géré des machines virtuelles sur VMware et VirtualBox. J'ai appris à sauvegarder et cloner des machines virtuelles, et à utiliser différents types de connexions réseau (NAT, PONT, Réseau Privé, Pas de connexion).</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 </div>
-
-            </div>
-            <div class="other-card">
-            
-                <h3>Langues</h3>
-                <ul class="langues">
-                    <li>Anglais (Niveau A2)</li>
-                    <img src="assets/RU.jpg" alt="Royaume-Uni" class="img-langues">
-                    <li>Espagnol (Niveau A2+)</li>
-                    <img src="assets/ESP.jpg" alt="Espagne" class="img-langues">
-                </ul>
+                <br>
+                <!-- Télécommunications -->
+                <div class="skills-category">
+                    <div class="contour">
+                        <h3>Télécommunications</h3>
+                        <br>
+                        <div class="skill-bar">
+                            <span class="tag">Utilisation d'un oscilloscope</span>
+                            <h1>50%</h1>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 50%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleDescription('oscillo-desc')">Afficher plus</button>
+                            <div id="oscillo-desc" class="skill-description" style="display: none;">
+                                <div class="descript-grid">
+                                    <div>
+                                        <h2>Contexte</h2>
+                                        <p>Pendant les travaux pratiques (TP) de télécommunications, j'ai appris à utiliser des oscilloscopes, notamment ceux des marques Keysight et Agilent.</p>
+                                    </div>
+                                    <div>
+                                        <h2>Objectif</h2>
+                                        <p>L'objectif était d'apprendre à observer et analyser un ou plusieurs signaux simultanément pour en extraire des informations comme l'amplitude, la fréquence, et la durée à l'état haut. Je devais également maîtriser le réglage des échelles horizontales et verticales ainsi que l'utilisation de fonctions avancées telles que la transformée de Fourier rapide (FFT) pour observer le spectre d'un signal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="skill-bar">
+                                <span class="tag">Utilisation d'un GBF (Générateur de fonction)</span>
+                                <h1>50%</h1>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 50%"></div>
+                                </div>
+                                <button class="toggle-button" onclick="toggleDescription('gbf-desc')">Afficher plus</button>
+                                <div id="gbf-desc" class="skill-description" style="display: none;">
+                                    <div class="descript-grid">
+                                        <div>
+                                            <h2>Contexte</h2>
+                                            <p>Pendant les travaux pratiques (TP) de télécommunications, j'ai appris à utiliser des générateurs de signaux (GBF) des marques Agilent et RIGOL.</p>
+                                        </div>
+                                        <div>
+                                            <h2>Objectif</h2>
+                                            <p>L'objectif était de maîtriser la génération de signaux avec différentes amplitudes et fréquences et d'apprendre à utiliser diverses fonctions telles que le réglage de l'impédance, la modulation, et la fonction sweep.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Mes qualités -->
+                <div class="skills-category">
+                    <div class="contour">
+                        <h3>Qualités</h3>
+                        <br>
+                        <div class="skill-bar">
+                            <span class="tag">Altruiste</span>
+                            <button class="toggle-button" onclick="toggleDescription('altruiste-desc')">Afficher plus</button>
+                            <div id="altruiste-desc" class="skill-description" style="display: none;">
+                                <div class="descript-grid">
+                                    <div>
+                                        <h2>Contexte</h2>
+                                        <p>J'ai développé cette compétence altruiste dans le contexte de la réserve en Gendarmerie. En effet, au sein de la réserve, j'ai été régulièrement confronté à des situations nécessitant une grande empathie et un sens profond de l'écoute. Ces expériences m'ont appris à être attentif aux besoins des autres, à fournir un soutien approprié et à agir dans le meilleur intérêt de la communauté. Cela a renforcé ma capacité à rester calme et posé dans des situations stressantes, tout en assurant le bien-être et la sécurité des personnes que je sers.</p>
+                                    </div>
+                                </div>
+                        </div>
+                    
+                        <br>
+                        <div class="skill-bar">
+                                <span class="tag">Sang Froid</span>
+                                <button class="toggle-button" onclick="toggleDescription('sangfroid-desc')">Afficher plus</button>
+                                <div id="sangfroid-desc" class="skill-description" style="display: none;">
+                                    <div class="descript-grid">
+                                        <div>
+                                            <h2>Contexte</h2>
+                                            <p>J'ai développé cette compétence de sang-froid dans le contexte de la réserve en Gendarmerie. En effet, lors de mes missions en tant que réserviste, j'ai souvent été confronté à des situations stressantes et imprévisibles. Ces expériences m'ont permis d'apprendre à garder mon calme, à analyser rapidement la situation et à prendre des décisions réfléchies sous pression. Cette capacité à rester serein et à gérer efficacement des situations délicates est essentielle pour assurer la sécurité et le bien-être des citoyens, ainsi que pour accomplir les missions de manière professionnelle et efficace.</p>
+                                        </div>
+                                    </div>
+                        </div>
+                        <br>
+                        <div class="skill-bar">
+                                <span class="tag">Assiduité</span>
+                                <button class="toggle-button" onclick="toggleDescription('assiduite-desc')">Afficher plus</button>
+                                <div id="assiduite-desc" class="skill-description" style="display: none;">
+                                    <div class="descript-grid">
+                                        <div>
+                                            <h2>Contexte</h2>
+                                            <p>L'assiduité est une compétence essentielle, surtout dans ma vie professionnelle. En effet, à l'IUT, des règles strictes sont régies concernant la présence de chaque étudiant en cours. Plus précisément, par le biais du site "Odin", chaque absence est comptabilisée et doit être justifiée. Au-delà de 2 absences non justifiées sur l’année, l’usager ne pourra ni être diplômé, ni passer en année supérieure, ni redoubler.</p>
+                                        </div>
+                                    </div>
+                                </div>          
+                        </div>
+                    </div>
             </div>
         </section>
+
+        <div class="other-card">
+            
+            <h3>Langues</h3>
+            <ul class="langues">
+                <li>Anglais (Niveau A2)</li>
+                <img src="assets/RU.jpg" alt="Royaume-Uni" class="img-langues">
+                <li>Espagnol (Niveau A2+)</li>
+                <img src="assets/ESP.jpg" alt="Espagne" class="img-langues">
+            </ul>
+        </div>
         
 
         <section id="experience" class="section">
@@ -578,5 +586,17 @@
         <p>© 2024 Hugo Ligutti - Tous droits réservés</p>
     </footer>
     
+
+    <script>
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>
