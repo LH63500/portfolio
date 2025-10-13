@@ -16,13 +16,6 @@
         <div class="bar"></div>
     </div>
 
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        }
-        </script>
-        
-    </div>
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
@@ -58,8 +51,18 @@
             <div class="about-grid">
                 <div class="about-card">
                     <h3>À propos de moi</h3>
-                    <p>Bonjour, je m'appelle Hugo, j'ai 18 ans et je suis originaire d'Issoire dans le Puy-de-Dôme (63500). <br>J'ai obtenu mon Baccalauréat général au lycée LaFayette (Clermont-Ferrand) avec les spécialités : <br>"Mathématiques" et "Numérique et sciences informatiques". <br><br> Je suis <strong>persévérant</strong>, <strong>autonome</strong> et <strong>sérieux</strong>, ainsi que passionné par les nouvelles technologies et le développement. J'ai donc décidé d'intégrer le BUT Réseaux et Télécommunications (BUT R&T) à l'Université Clermont Auvergne. <br><br> En septembre 2025, je serai à la <span style="background-color: yellow;">recherche d'une alternance</span> dans une entreprise du domaine de l'industrie de l'informatique et des réseaux. <br>(voir mes <a href="#skills">compétences techniques</a>). <br>Je cherche une alternance d'une durée de 2 ans, avec un rythme d'un mois sur deux. <p></p> Mon objectif professionnel après mon BUT est de poursuivre mes études dans le domaine des Réseaux et Systèmes.
-                </p>
+                    <p>Bonjour, je m'appelle Hugo, j'ai 19 ans et je suis originaire d'Issoire dans le Puy-de-Dôme (63500). 
+                        <br>J'ai obtenu mon Baccalauréat général au lycée LaFayette (Clermont-Ferrand) avec les spécialités : 
+                        <br>"Mathématiques" et "Numérique et sciences informatiques". 
+                        <br><br> Je suis <strong>persévérant</strong>, <strong>autonome</strong> et <strong>sérieux</strong>, 
+                        ainsi que passionné par les nouvelles technologies et le développement. 
+                        J'ai donc décidé d'intégrer le BUT Réseaux et Télécommunications (BUT R&T) à l'Université Clermont Auvergne. 
+                        <br><br> En septembre 2025, je serai à la <span style="background-color: yellow;">recherche d'une alternance</span> 
+                        dans une entreprise du domaine de l'industrie de l'informatique et des réseaux. 
+                        <br>(voir mes <a href="#skills">compétences techniques</a>). 
+                        <br>Je cherche une alternance d'une durée de 2 ans, avec un rythme alternant un mois en entreprise et un mois en cours. 
+                        Mon objectif professionnel après mon BUT est de poursuivre mes études dans le domaine des Réseaux et Systèmes jusqu'au Master.
+                    </p>
                 </div>
             </div>
         </section>
@@ -86,9 +89,9 @@
                         <h3>Obtention du Baccalauréat Général au Lycée Lafayette (Clermont-Fr)</h3>
                         <img src="assets/BAC.jpg" alt="diplôme BAC" class="img-forma">
                         <h4>Contexte</h4>
-                        <p>Mes spécialités en terminal : Mathématiques et NSI. <br> La spécialité abandonnée en Première : Science de l'ingénieur.</p>
+                        <p>Mes spécialités en terminal : Mathématiques et NSI. <br> La spécialité que j'ai abandonnée en Première : Science de l'ingénieur.</p>
                         <h4>Résultat</h4>
-                        <p>J'ai obtenu la mention Assez Bien</p>
+                        <p>J'ai obtenu la mention Assez Bien au Baccalauréat.</p>
                         <br>
                         <div class="bouton-forma">
                             <a href="assets/NotesBac.pdf" download="NotesBac.pdf" target="_blank" class="image-button">Notes du Baccalauréat</a>
@@ -126,7 +129,7 @@
             <div class="skills-grid">
                 <!-- Programmation -->
                 <div class="skills-category">
-                    <div class="contour">
+                    <div class="skills-card">
                         <h3>Programmation</h3>
                         <br>
                         <div class="skill-bar">
@@ -153,6 +156,31 @@
                                 </div>
                             </div>
                         </div>
+                    <br>
+                    <div class="skill-bar">
+                        <span class="tag">PHP</span>
+                                <h1>55%</h1>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 55%"></div>
+                                </div>
+                                <button class="toggle-button" onclick="toggleDescription('php-desc')">Afficher plus</button>
+                                <div id="php-desc" class="skill-description" style="display: none;">
+                                    <div class="descript-grid">
+                                        <div>
+                                            <h2>Contexte</h2>
+                                            <p>En première année, j'ai été introduit aux bases du développement web dynamique, en particulier avec le language PHP, qui est un langage fondamental pour créer des pages web dynamiques.</p>
+                                        </div>
+                                        <div>
+                                            <h2>Objectif</h2>
+                                            <p>L'objectif était de comprendre comment on pouvait associer des formulaires HTML avec une variable PHP et comment l'implémenter dans le code pour rendre le visuel plus dynamique et personnalisé.</p>
+                                        </div>
+                                        <div>
+                                            <h2>Travaux</h2>
+                                            <p>Une évaluation noté avec l'utilisation d'une base de donnée. <br>Exemple : <br>Création d'un memory (le jeu de cartes).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
                     <br>
                     <div class="skill-bar">
                             <span class="tag">Python</span>
@@ -203,14 +231,14 @@
                 <br>
                 <!-- Réseaux -->
                 <div class="skills-category">
-                    <div class="contour">
+                    <div class="skills-card">
                         <h3>Réseaux</h3>
                         <br>
                         <div class="skill-bar">
                             <span class="tag">Configuration d'un réseau informatique</span>
-                            <h1>65%</h1>
+                            <h1>80%</h1>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 65%"></div>
+                                <div class="progress" style="width: 80%"></div>
                             </div>
                             <button class="toggle-button" onclick="toggleDescription('network-desc')">Afficher plus</button>
                             <div id="network-desc" class="skill-description" style="display: none;">
@@ -259,14 +287,14 @@
                 <br>
                 <!-- Télécommunications -->
                 <div class="skills-category">
-                    <div class="contour">
+                    <div class="skills-card">
                         <h3>Télécommunications</h3>
                         <br>
                         <div class="skill-bar">
                             <span class="tag">Utilisation d'un oscilloscope</span>
-                            <h1>50%</h1>
+                            <h1>70%</h1>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 50%"></div>
+                                <div class="progress" style="width: 70%"></div>
                             </div>
                             <button class="toggle-button" onclick="toggleDescription('oscillo-desc')">Afficher plus</button>
                             <div id="oscillo-desc" class="skill-description" style="display: none;">
@@ -285,9 +313,9 @@
                         <br>
                         <div class="skill-bar">
                                 <span class="tag">Utilisation d'un GBF (Générateur de fonction)</span>
-                                <h1>50%</h1>
+                                <h1>70%</h1>
                                 <div class="progress-bar">
-                                    <div class="progress" style="width: 50%"></div>
+                                    <div class="progress" style="width: 70%"></div>
                                 </div>
                                 <button class="toggle-button" onclick="toggleDescription('gbf-desc')">Afficher plus</button>
                                 <div id="gbf-desc" class="skill-description" style="display: none;">
@@ -306,9 +334,76 @@
                     </div>
                 </div>
                 <br>
+                <!--Téléphonie-->
+                <div class="skills-category">
+                    <div class="skills-card">
+                        <h3>Téléphonie VoIP</h3>
+                        <br>
+                        <div class="skill-bar">
+                            <span class="tag">Configuration des abonnées</span>
+                            <h1>72.5%</h1>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 72.5%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleDescription('abo-desc')">Afficher plus</button>
+                            <div id="abo-desc" class="skill-description" style="display: none;">
+                                <div class="descript-grid">
+                                    <div>
+                                        <h2>Contexte</h2>
+                                        <p>Pendant les travaux pratiques (TP) de téléphonie, j'ai appris à configurer des abonnés téléphoniques sur un Call Serveur via le logiciel OpenScape Business.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h2>Objectif</h2>
+                                        <p>L'objectif pendant ces TP était de prendre en main des outils de configuration présents sur le logiciel OpenScape dans le but de pouvoir réaliser lors d'un examen des manipulations précises sur le logiciel en ne réutilisant aucune prise de note réalisée durant les TP. 
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h2>Travaux</h2>
+                                        <p>Voici quelques fonctionnalités que j'ai utilisées ou configurées en utilisant OpenScape : 
+                                            <ul>
+                                                <li>La messagerie vocale</li>
+                                                <li>Le renvoi d'appel</li>
+                                                <li>La création de groupes d'appel</li>
+                                                <li>Mise en service d'un Trunk SIP</li>
+                                                <li>Gestion des licences</li>
+                                            </ul></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="skill-bar">
+                                <span class="tag">Manipulation des téléphones </span>
+                                <h1>72.5%</h1>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 72.5%"></div>
+                                </div>
+                                <button class="toggle-button" onclick="toggleDescription('tel-desc')">Afficher plus</button>
+                                <div id="tel-desc" class="skill-description" style="display: none;">
+                                    <div class="descript-grid">
+                                        <div>
+                                            <h2>Contexte</h2>
+                                            <p>Pendant les travaux pratiques (TP) de téléphonie, j'ai manipulé et configuré des téléphones VoIP de différentes marques (Cisco SPA504G, Unify Openstage 60, Logiciel Softphone X-Lite) ainsi que de différents type (Client SIP, Client TFA).</p>
+                                        </div>
+                                        <div>
+                                            <h2>Objectif</h2>
+                                            <p>L'objectif était de prendre en main l'installation des téléphones fixe et portable sur le réseau local de l'IUT et de mémoriser les manipulations à effectuer pour les restituer lors de l'examen noté.</p>
+                                        </div>
+                                        <div>
+                                            <h2>Travaux</h2>
+                                            <p>Sur les appareils téléphoniques nous devions à chaque séance de TP les réinitialiser (Factory Reset) en entrant leurs adresses IP dans le navigateur connecté au réseau local. 
+                                                Ainsi nous devions être rapide et efficace à chaque séance pour ne pas perdre de temps et répondre à toutes les questions dans un compte rendu pour réviser lors de l'évaluation finale.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
                 <!-- Mes qualités -->
                 <div class="skills-category">
-                    <div class="contour">
+                    <div class="skills-card">
                         <h3>Qualités</h3>
                         <br>
                         <div class="skill-bar">
@@ -325,7 +420,7 @@
                     
                         <br>
                         <div class="skill-bar">
-                                <span class="tag">Sang Froid</span>
+                                <span class="tag">Sang-froid</span>
                                 <button class="toggle-button" onclick="toggleDescription('sangfroid-desc')">Afficher plus</button>
                                 <div id="sangfroid-desc" class="skill-description" style="display: none;">
                                     <div class="descript-grid">
@@ -349,19 +444,24 @@
                                 </div>          
                         </div>
                     </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="skills-category">
+                <div class="langue-card">
+                    <h3>Langues</h3>
+                    <br>
+                    <ul class="langues">
+                        <li>Anglais</li>
+                        <img src="assets/RU.jpg" alt="Royaume-Uni" class="img-langues">
+                        <li>Espagnol</li>
+                        <img src="assets/ESP.png" alt="Espagne" class="img-langues">
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <div class="other-card">
-            
-            <h3>Langues</h3>
-            <ul class="langues">
-                <li>Anglais (Niveau A2)</li>
-                <img src="assets/RU.jpg" alt="Royaume-Uni" class="img-langues">
-                <li>Espagnol (Niveau A2+)</li>
-                <img src="assets/ESP.jpg" alt="Espagne" class="img-langues">
-            </ul>
-        </div>
         
 
         <section id="experience" class="section">
@@ -394,11 +494,11 @@
                 </div>
                 <div class="experience-card">
                     <div class="experience-date">Février 2024</div>
-                    <h3>Stage d'observation - Net Service Informatique (Clermont-Ferrand)</h3>
+                    <h3><strong>Stage d'observation - Net Service Informatique (Clermont-Ferrand)</strong></h3>
                     <img src="assets/NetS.jpg" alt="Logo NetServiceInformatique" class="posimg">
                     <br>
                     <h4>Contexte</h4>
-                    <p>Dans le cadre de mes études en Réseau et Télécommunication, j’ai effectué un stage d’observation chez Net Service Informatique en février 2024. Cette entreprise, spécialisée dans les services informatiques et la gestion de réseaux, m’a permis de découvrir le fonctionnement interne d’une entreprise du secteur technologique.</p>
+                    <p>Dans le cadre de mes études en Réseau et Télécommunication, j’ai effectué un stage d’observation chez Net Service Informatique en février 2024. <br> Cette entreprise, spécialisée dans les services informatiques et la gestion de réseaux, m’a permis de découvrir le fonctionnement interne d’une entreprise du secteur technologique.</p>
                     <br>
                     <h4>Objectifs</h4>
                     <p>L’objectif principal de ce stage était de me familiariser avec les métiers liés à l’informatique et aux réseaux, tout en observant les différentes étapes du support technique, de la gestion des infrastructures et des interactions avec les clients.</p>
@@ -418,16 +518,12 @@
                 </div>
                 <div class="experience-card">
                     <div class="experience-date">2023</div>
-                    <h3>Travail d'été - Castration de maïs</h3>
+                    <h3><strong>Travail d'été - Castration de maïs</strong></h3>
+                    <br>
                     <img src="assets/Agri.jpg" alt="Logo AgriEmploi" class="posimg">
-                    <br>
-                    <br>
-                    <br>
                     <h4>Contexte</h4>
                     <p>J’ai travaillé durant l’été dans une exploitation agricole spécialisée dans la culture du maïs à Issoire (63500). <br>Ce travail saisonnier nécessitait de la rigueur, de l’endurance et un fort esprit d’équipe.</p>
-                    <br>
-                    <br>
-                    <br>
+                    <br>    
                     <img src="assets/maïs.png" alt="maïs" class="posimg" id="agrandir">
                     <h4>Objectifs</h4>
                     <p>Mon objectif principal était de contribuer à l’étape de castration des plants de maïs. <br>Il s’agissait également d’une opportunité pour développer des compétences en travail collectif.</p>
@@ -449,47 +545,74 @@
 
         <section id="projects" class="section">
             <h2 class="section-title">Projets</h2>
+            <div class="project-grid">
                 <div class="project-card">
-                    <div class="project-content">
-                        <h3>Projet de BUT1 en SAE15 - Aider le service de communication à promouvoir le BUT auprès des lycéens</h3>
-                        <br>
-                        <img src="assets/Projet15.png" alt="Projet SAE15" class="project-image">
-                        <br>
-                        <h4>Contexte</h4>
-                        <p>J'ai réalisé ce projet noté seul dans la matière "Situation d'apprentissage et d'évaluation n°15" (SAE15). </p>
-                        <h4>Objectif</h4>
-                        <p>L'objectif de ce projet est de noter nos compétences techniques en langage de programmation et plus précisément en "Python". <br>Nous devions suivre une consigne préétablie : <br><div style="text-indent: 25px;">Pour mieux expliquer aux lycéens, le service communication doit connaitre la répartition horaire de chaque matière.</div><br><div style="text-indent: 50px;">Afficher, pour le  BUT1, la répartition (en volume horaire) des CM, TD, TP de chaque matière.</div><br><div style="text-indent: 50px;">Cahier des charges fonctionnel : </div><br></div><div style="text-indent: 50px;">Les données seront extraites d’ADE (fichier CSV).</div><div style="text-indent: 50px;">Le script prend en compte toute l’année universitaire, c’est à dire du 1 septembre au 31 août.</div></p>
-                        <h4>Résultat</h4>
-                        <p>Le projet n'a pas été corrigé à l'heure actuelle</p>
-                        <div class="project-tags">
+                    <div class="project-title">
+                        <h3>Aider le service de communication à promouvoir le BUT auprès des lycéens</h3>
+                    </div>
+                    <h3>Projet de BUT1 en SAE15</h3>
+                    <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">CSV</span>
                         </div>
-                        <div class="social-content">
-                            <a href="CSV CODE.zip" download="CSV CODE.zip" target="_blank" class="image-button">Télécharger mon projet</a>
-                        </div>
-                    </div>
+                    <img src="assets/projet1-illustration.png" alt="Illustration du projet" class="interest-image">
+                    <a href="projets/projet1/index-p1.html" class="cta-button">Voir le projet</a>
                 </div>
-                <br>
                 <div class="project-card">
-                    <div class="project-content">
-                        <h3>Projet de BUT1 en SAE14 - Portfolio</h3>
-                        <br>
-                        <div>
-                        <img src="assets/portfo.png" alt="Portfolio" class="project-image">
-                        </div>
-                        <br>
-                        <h4>Contexte</h4>
-                        <p>Dans le cadre de la matière "Situation d'apprentissage et d'évaluation n°14" (SAE14), j'ai réalisé un projet individuel visant à créer un portfolio. <br>Ce projet avait pour but de me permettre de rassembler et de présenter mes travaux et compétences acquises durant ma première année de BUT.</p>
-                        <h4>Objectif</h4>
-                        <p>L'objectif principal de ce projet était de développer un portfolio numérique qui met en valeur mes compétences techniques, mes projets réalisés, et mes expériences académiques et professionnelles. Ce portfolio devait être structuré de manière claire et attrayante pour être utilisé lors de futures candidatures à des stages ou emplois.</p>
-                        <h4>Résultat</h4>
-                        <p>Pour ce projet j'ai obtenu la note de 14.90 sur 20, les critéres d'évaluation était principalement sur la structure du code et le fonctionnement de la page web. <br></p>
-                        <div class="project-tags">
+                    <div class="project-title">
+                        <h3>Portfolio</h3>
+                    </div>
+                    <h3>Projet de BUT1 en SAE14</h3>
+                    <div class="project-tags">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                         </div>
+                    <img src="assets/projet2-illustration.png" alt="Illustration du projet" class="interest-image">
+                    <!--  <a href="projets/projet2/index-p2.html" class="cta-button">Voir le projet</a> -->
+                    <a href="projets/projet2/index-p2.html" class="cta-button" role="button">Voir le projet</a>
+                    <!--<span class="alert">
+                        <p><strong>Le projet n'est pas encore disponible.</strong></p>-->
+                </div>
+                <div class="project-card">
+                    <div class="project-title">
+                        <h3>Création d'une vidéo pour présenter ma formation pour la JPO</h3>
                     </div>
+                    <h3>Projet de BUT1 en Projet Personnel ET Professionnel (PPP)</h3>
+                    <div class="project-tags">
+                            <span class="tag">Montage Vidéo</span>
+                            <span class="tag">Vulgarisation</span>
+                        </div>
+                    <img src="assets/projet3-illustration.jpg" alt="Illustration du projet" class="interest-image">
+                    <a href="projets/projet3/index-p3.html" class="cta-button">Voir le projet</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">
+                        <h3>Manipulations et configurations de téléphones fixes dans un réseau local</h3>
+                    </div>
+                    <h3>Projet de BUT1 en Initiation à la téléphonie d'entreprise</h3>
+                    <div class="project-tags">
+                            <span class="tag">Windows</span>
+                            <span class="tag">Manipulations techniques</span>
+                        </div>
+                    <img src="assets/projet4-illustration.jpg" alt="Illustration du projet" class="interest-image">
+                    <a href="projets/projet4/index-p4.html" class="cta-button">Voir le projet</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">
+                        <h3>Projet Intégratif</h3>
+                    </div>
+                    <h3>Projet de BUT1 en SAE204</h3>
+                    <div class="project-tags">
+                            <span class="tag">Réseaux</span>
+                            <span class="tag">Programmation</span>
+                            <span class="tag">Manipulations techniques</span>
+                        </div>
+                    <img src="assets/projet5-illustation.png" alt="Illustration du projet" class="interest-image">
+                    <a href="projets/projet5/index-p5.html" class="cta-button" >Voir le projet</a>
+                    <span class="alert">
+                        <p><strong>Le projet est en cours de développement.</strong></p>
+                    </span>
+                </div>
             </div>
         </section>
 
@@ -508,12 +631,12 @@
                         <br>
                         <p>J'ai appris quelques riffs et début de morceau à la guitare, en voici quelques exemples de titres :</p>
                         <br>
-                        <ul><li>Do i wanna know <br>- Artics Monkeys</li>
-                            <li>Parisienne Walkways <br>- Gary More</li>    
+                        <ul><li>Do I Wanna Know <br>- Arctic Monkeys</li>
+                            <li>Parisienne Walkways <br>- Gary Moore</li>    
                             <li>Smoke on the water <br>- Deep Purple</li>
                             <li>Come as you are <br>- Nirvana</li>
                             <li>Still loving you <br>- Scorpions</li>
-                        <p><br>Je joue aussi du Piano cependant j'ai appris moins de chansons qu'à la guitare électrique. Le seul morceau que je sais actuellement bien jouer    est : <br><ul><li>Passcaglia - Handel/Halvorsen</li></ul><br>Le morceau que suis entrain d'apprendre est : <ul><li>The Winner Takes It All - ABBA</li></ul></p>
+                        <p><br>Je joue aussi du Piano cependant j'ai appris moins de chansons qu'à la guitare électrique. Le seul morceau que je sais actuellement bien jouer    est : <br><ul><li>Passcaglia - Handel/Halvorsen</li></ul><br>Le morceau que je suis entrain d'apprendre est : <ul><li>The Winner Takes It All - ABBA</li></ul></p>
                     
                         
                         
@@ -521,7 +644,7 @@
                     </div>
                     <br>
                     <div class="divers">
-                        <h3>Les sorties en plein air</h3>
+                        <h3>Activités en plein air</h3>
                         <img src="assets/running.jpg" alt="Running" class="interest-image">
                         <p>Je fais souvent des randonnées à pied en famille durant les weekends ou bien les vacances scolaires chez moi, à Issoire. Ces randonnées varient de 5 à 8 km.</p>
                         <p>Nos sorties nous permettent de découvrir des paysages magnifiques, de profiter de la nature et de passer du temps de qualité ensemble. Nous aimons explorer différents sentiers, que ce soit en forêt, en montagne ou le long de rivières, et cela nous aide à rester actifs et à nous déconnecter du quotidien.</p>
@@ -537,7 +660,7 @@
                         <h3>Le badminton</h3>
                         <img src="assets/USI.jpg" alt="Club USI" class="interest-image">
                         <img src="assets/bad.jpg" alt="Je joue au bad" class="interest-image" id="agrandir">
-                        <p>J'ai pratiqué du badminton en club à l'USI pendant 6 ans et j'ai arrêté à l'âge de 16 ans. <br>Durant cette période, j'ai participé à plusieurs compétitions locales et régionales, ce qui m'a permis de développer des compétences techniques et stratégiques. J'ai arrêté le badminton au niveau P10 (en double), ce qui correspond à un niveau assez bas, je peux justifer ce niveau par rapport au nombre de compétitons auxquelles j'ai participé (peu de compétitions). Le badminton m'a également appris l'importance du travail d'équipe, de la persévérance et de la discipline. J'ai fait de nombreuses rencontres et j'ai noué des amitiés durables grâce à ce sport.</p>
+                        <p>J'ai pratiqué du badminton en club à l'USI pendant 6 ans et j'ai arrêté à l'âge de 16 ans. <br>Durant cette période, j'ai participé à plusieurs compétitions locales et régionales, ce qui m'a permis de développer des compétences techniques et stratégiques. J'ai arrêté le badminton au niveau P10 (en double), ce qui correspond à un niveau assez bas, je peux justifier ce niveau par rapport au nombre de compétitions auxquelles j'ai participé (peu de compétitions). Le badminton m'a également appris l'importance du travail d'équipe, de la persévérance et de la discipline. J'ai fait de nombreuses rencontres et j'ai noué des amitiés durables grâce à ce sport.</p>
                     </div>
                 </div>
             </section>
@@ -548,8 +671,9 @@
         <section id="cv" class="section">
             <h2 class="section-title">Mon CV</h2>
             <div class="CV-card">
-                <a href="assets/CV Hugo.pdf" download="CV Hugo.pdf" target="_blank" class="cta-button">Télécharger mon CV</a>
-                <img src="assets/CV image.png" alt="CV" class="CV_image">
+                <a href="assets/CV Hugo.pdf" download="CV_LIGUTTI_Hugo.pdf" target="_blank" class="cta-button">Télécharger mon CV</a>
+                <iframe src="assets/CV Hugo.pdf" width="100%" height="600px" style="border: none;"></iframe>
+
             </div>
         </section>
     
@@ -588,6 +712,10 @@
     
 
     <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
         function toggleDescription(id) {
             const description = document.getElementById(id);
             if (description.style.display === "none" || description.style.display === "") {
@@ -596,6 +724,8 @@
                 description.style.display = "none";
             }
         }
+
+        
     </script>
 
 </body>
