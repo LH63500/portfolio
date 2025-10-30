@@ -725,8 +725,68 @@
             }
         }
 
+        // Attend que toute la page soit chargée
+    document.addEventListener('DOMContentLoaded', () => {
+
+    // Sélectionne les éléments nécessaires
+    const container = document.querySelector('.other-cards-container');
+    const prevBtn = document.getElementById('scroll-prev');
+    const nextBtn = document.getElementById('scroll-next');
+
+    if (container && prevBtn && nextBtn) {
+        
+        // Gère le clic sur le bouton "Suivant"
+        nextBtn.addEventListener('click', () => {
+            // Calcule la largeur d'une carte (y compris le 'gap')
+            const card = container.querySelector('.divers-card');
+            const scrollAmount = card.offsetWidth + parseFloat(getComputedStyle(container).gap);
+            
+            // Fait défiler le conteneur vers la droite
+            container.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth' // 'smooth' pour l'animation de défilement
+            });
+        });
+
+        // Gère le clic sur le bouton "Précédent"
+        prevBtn.addEventListener('click', () => {
+            // Calcule la largeur d'une carte
+            const card = container.querySelector('.divers-card');
+            const scrollAmount = card.offsetWidth + parseFloat(getComputedStyle(container).gap);
+
+            // Fait défiler le conteneur vers la gauche
+            container.scrollBy({
+                left: -scrollAmount, // Négatif pour aller à gauche
+                behavior: 'smooth'
+            });
+        });
+
+        // Optionnel : cacher les boutons si on est au début ou à la fin
+        // (Un peu plus avancé, mais très propre)
+        const updateButtonState = () => {
+            // scrollLeft = position de défilement actuelle
+            // scrollWidth = largeur totale du contenu (y compris ce qui est caché)
+            // clientWidth = largeur visible du conteneur
+            
+            // Cache le bouton "Précédent" si on est tout à gauche
+            prevBtn.style.display = container.scrollLeft <= 0 ? 'none' : 'block';
+
+            // Cache le bouton "Suivant" si on est tout à droite
+            const maxScrollLeft = container.scrollWidth - container.clientWidth;
+            nextBtn.style.display = container.scrollLeft >= maxScrollLeft - 1 ? 'none' : 'block';
+        };
+
+        // Met à jour les boutons au chargement
+        updateButtonState();
+        
+        // Met à jour les boutons à chaque fois qu'on défile
+        container.addEventListener('scroll', updateButtonState);
+    }
+});
+
         
     </script>
 
 </body>
 </html>
+
