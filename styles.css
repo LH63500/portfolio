@@ -681,4 +681,66 @@ img#agrandir:hover{
 	margin: 2rem;
 	margin-bottom: 15px;
 	padding: 4px 12px;
+
+}
+
+/* Modifiez le conteneur pour cacher la barre de scroll */
+.other-cards-container {
+    display: flex;
+    overflow-x: hidden; /* CACHE la barre de scroll */
+    padding: 1.5rem;
+    gap: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth; /* IMPORTANT : anime le défilement */
+}
+
+/* Style des cartes (identique à l'option 1) */
+.divers-card {
+    flex: 0 0 350px; /* Ou 80%, 90% etc. */
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.divers-card .interest-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Style pour les boutons */
+.scroll-btn {
+    display: block; /* AFFICHE les boutons */
+    position: absolute; /* Se positionne par-dessus le conteneur */
+    top: 50%;
+    transform: translateY(-50%); /* Centre verticalement */
+    z-index: 10;
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 50%; /* Boutons ronds */
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background-color: #ffffff;
+}
+
+/* Positionnement des boutons */
+#scroll-prev {
+    left: 10px; /* À gauche */
+}
+
+#scroll-next {
+    right: 10px; /* À droite */
 }
