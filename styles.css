@@ -678,3 +678,53 @@ img#agrandir:hover{
 	padding: 4px 12px;
 
 }
+
+/* Carousel projets : affiche un projet à la fois */
+.projects-carousel {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.carousel-track {
+	flex: 1 1 auto;
+	position: relative;
+}
+.carousel-slide {
+	display: none;
+}
+.carousel-slide.active {
+	display: block;
+}
+.carousel-btn {
+	background: var(--primary-color);
+	color: white;
+	border: none;
+	padding: 0.5rem 0.9rem;
+	font-size: 2rem;
+	line-height: 1;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: var(--transition);
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.carousel-btn:hover { transform: translateY(-3px); }
+.carousel-counter {
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+	font-weight: bold;
+	color: var(--text-color);
+}
+
+/* Responsive : boutons plus petits sur mobile */
+@media (max-width: 870px) {
+	.carousel-btn { font-size: 1.4rem; width: 40px; height: 40px; }
+	.carousel-counter { bottom: -50px; }
+}
