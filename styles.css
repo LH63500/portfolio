@@ -212,6 +212,20 @@ body {
 	font-size: 0.8rem;
 
 }
+
+/* Link that wraps a project card to make whole card clickable */
+.project-link {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+}
+.project-link .project-card {
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-link:hover .project-card {
+	transform: translateY(-6px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
 /* Buttons */
 .social-link {
 	display: inline-block;
