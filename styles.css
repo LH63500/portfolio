@@ -218,13 +218,27 @@ body {
 	display: block;
 	color: inherit;
 	text-decoration: none;
+	-webkit-tap-highlight-color: transparent; /* remove grey overlay on mobile */
 }
+/* Prevent background/text selection highlight inside project cards */
+.project-link, .project-link * {
+	background: transparent !important;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.project-link:focus { outline: none; }
 .project-link .project-card {
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .project-link:hover .project-card {
 	transform: translateY(-6px);
 	box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+.project-link:active .project-card {
+	transform: translateY(-2px);
 }
 /* Buttons */
 .social-link {
