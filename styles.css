@@ -765,7 +765,7 @@ img#agrandir:hover{
 	display: block;
 }
 .carousel-btn {
-	background: var(--primary-color);
+	background: var(--card-bg);
 	color: white;
 	border: none;
 	padding: 0.5rem 0.9rem;
