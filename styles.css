@@ -256,10 +256,12 @@ body {
 	text-decoration: none;
 	-webkit-tap-highlight-color: transparent; /* remove grey overlay on mobile */
 }
-/* Prevent background/text selection highlight inside project cards */
-.project-link, .project-link *:not(.tag) {
-	background: transparent !important;
+.project-link {
 	-webkit-tap-highlight-color: transparent;
+}
+/* Prevent text selection inside clickable project links but do not force backgrounds */
+.project-link,
+.project-link *:not(.tag) {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
