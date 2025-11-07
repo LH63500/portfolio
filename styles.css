@@ -140,47 +140,12 @@ body {
 
 
 /* Cards */
-.about-card,.experience-card,.CV-card {
+.about-card,.experience-card,.project-card,.CV-card {
 	background-color: var(--section-bg);
 	padding: 2rem;
 	border-radius: 10px;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	transition: var(--transition);
-}
-
-/* Project cards: distinct background, centered content and uniform size */
-.project-card {
-	background-color: var(--card-bg, #ffffff);
-	padding: 1.5rem 1.75rem;
-	border-radius: 12px;
-	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-	transition: var(--transition);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	justify-content: space-between;
-	min-height: 460px; /* all cards same minimum height */
-	max-width: 820px;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-/* Ensure images inside project cards keep a consistent size */
-.project-card .interest-image {
-	width: 100%;
-	max-height: 220px;
-	object-fit: cover;
-	border-radius: 8px;
-	margin-top: 1rem;
-}
-
-/* Make titles and other text centered and constrained */
-.project-card .project-title,
-.project-card h3,
-.project-card p {
-	width: 100%;
-	text-align: center;
 }
 /* Timeline */
 .experience-grid,.timeline {
@@ -233,12 +198,11 @@ body {
 	border-radius: 10px 10px 0 0;
 }
 .project-tags {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-    justify-content: center; /* center tags horizontally */
+	display: flex;
+	gap: 0.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	flex-wrap: wrap
 }
 .tag {
 	background: var(--accent-color);
@@ -256,12 +220,10 @@ body {
 	text-decoration: none;
 	-webkit-tap-highlight-color: transparent; /* remove grey overlay on mobile */
 }
-.project-link {
+/* Prevent background/text selection highlight inside project cards */
+.project-link, .project-link *:not(.tag) {
+	background: transparent !important;
 	-webkit-tap-highlight-color: transparent;
-}
-/* Prevent text selection inside clickable project links but do not force backgrounds */
-.project-link,
-.project-link *:not(.tag) {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -765,7 +727,7 @@ img#agrandir:hover{
 	display: block;
 }
 .carousel-btn {
-	background: var(--card-bg);
+	background: var(--primary-color);
 	color: white;
 	border: none;
 	padding: 0.5rem 0.9rem;
@@ -793,14 +755,4 @@ img#agrandir:hover{
 @media (max-width: 870px) {
 	.carousel-btn { font-size: 1.4rem; width: 40px; height: 40px; }
 	.carousel-counter { bottom: -50px; }
-
-	/* Mobile: make project cards a bit shorter and more compact */
-	.project-card {
-		min-height: 360px;
-		padding: 1rem;
-	}
-
-	.project-card .interest-image {
-		max-height: 160px;
-	}
 }
