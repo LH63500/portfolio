@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Hugo LIGUTTI - Projet1</title>
+    <link rel="icon" href="../../assets/uca.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../../index.html#projects"><img src="../../assets/accueil-illustration.png" alt="Accueil" class="logo-accueil"></a>
+            </div>
+            <h1>Projet n°1 : Application Coffre-fort Android</h1>
+        </div>
+    </nav>
+
+    <header class="hero" id="accueil">
+        <h4>Contexte :</h4>
+        <br>
+        <p>Dans le cadre de la matière <strong>SAE3.2</strong>, nous devons développer une application Android en langage <strong>Java</strong> permettant de sécuriser et de consulter des documents personnels.</p>
+        <br>
+        <p>Ce projet vise à mettre en pratique les notions de développement mobile, de base de données, de sécurité et de gestion d’informations sensibles vues en cours.</p>
+        <br>
+
+        <h4>Objectif :</h4>
+        <br>
+        <p>L’objectif principal est de concevoir une <strong>application Coffre-fort</strong> fonctionnelle sur Android permettant :</p>
+        <ul>
+            <li>L’<strong>authentification</strong> sécurisée de l’utilisateur via un mot de passe chiffré.</li>
+            <li>La <strong>consultation et l’organisation</strong> de documents par catégories (texte, image, audio, vidéo...).</li>
+            <li>L’<strong>ajout, la suppression et la modification</strong> de documents.</li>
+            <li>Le <strong>chiffrement</strong> des données sensibles grâce au Keystore Android et à l’algorithme AES-GCM.</li>
+        </ul>
+        <br>
+
+        <h4>Travaux réalisés :</h4>
+        <br>
+        <ul>
+            <li>Création de l’interface de connexion (authentification par mot de passe).</li>
+            <li>Implémentation d’une base de données locale avec <strong>Room (SQLite)</strong>.</li>
+            <li>Développement du système de chiffrement des documents et des mots de passe.</li>
+            <li>Affichage dynamique de la liste des documents avec filtrage par catégorie.</li>
+            <li>Ajout de la gestion des catégories avec affichage personnalisé.</li>
+            <li>Mise en place d’un système d’import/export de sauvegarde chiffrée.</li>
+            <li>(Bonus) Intégration d’un service pour enregistrer automatiquement les SMS reçus dans le coffre-fort.</li>
+            <li>(Bonus) Envoi automatique des SMS vers une adresse mail configurée.</li>
+        </ul>
+        <br>
+
+        <h4>Résultat :</h4>
+        <br>
+        <p>L’application permet déjà de :</p>
+        <ul>
+            <li>Se connecter via mot de passe sécurisé (hash PBKDF2).</li>
+            <li>Ajouter et consulter des documents stockés localement et chiffrés.</li>
+            <li>Afficher les documents par catégorie avec différents modes de présentation.</li>
+        </ul>
+        <br>
+        <span class="alert">
+            <p><strong>Le projet est actuellement en phase de finalisation et d’intégration des fonctionnalités bonus (SMS & envoi mail).</strong></p>
+        </span>
+        <br>
+
+        <h4>Technologies utilisées :</h4>
+        <br>
+        <ul>
+            <li>Langage : <strong>Java</strong></li>
+            <li>IDE : <strong>Android Studio</strong></li>
+            <li>Base de données : <strong>Room (SQLite)</strong></li>
+            <li>Sécurité : <strong>AES-GCM + Android Keystore</strong></li>
+            <li>Architecture : <strong>MVC / Repository Pattern</strong></li>
+        </ul>
+        <br>
+
+        <h4>Téléchargements :</h4>
+        <br>
+        <p><strong>APK :</strong> <em>Bientôt disponible</em></p>
+        <p><strong>Code source :</strong> <a href="#" target="_blank">Lien GitHub (à venir)</a></p>
+    </header>
+
+</body>
+</html>
