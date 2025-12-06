@@ -721,3 +721,55 @@ footer {
     
     .cv-frame { height: 400px; }
 }
+
+/* Overlay et flou */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(44, 44, 49, 0.55);
+  backdrop-filter: blur(6px) brightness(0.8);
+  z-index: 2000;
+  animation: fadeInOverlay 0.22s;
+}
+@keyframes fadeInOverlay {from {opacity:0;}to{opacity:1;}}
+/* Modal */
+.skills-modal-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: row;
+  width: 65vw;
+  max-width: 880px;
+  min-width: 320px; min-height: 340px; height: 65vh;
+  animation: fadeInModal 0.25s;
+  overflow: hidden;
+}
+@keyframes fadeInModal {from {transform:translateY(30px) scale(.95);opacity:0;}to{transform:translateY(0) scale(1);opacity:1;}}
+.skills-modal-sidebar {
+  background: #f5f6fa;
+  width: 200px; padding: 1.5rem .9rem;
+  border-right: 1px solid #e2e8f0;
+  display: flex; flex-direction: column;
+}
+.skills-modal-sidebar ul {list-style: none; padding:0; margin:0;}
+.skills-modal-sidebar li {
+  color: #2d3436;
+  border-radius: 7px; padding: 0.75rem 0.6rem; margin-bottom: .5rem;
+  cursor: pointer; transition: background 0.18s;
+  font-weight: 500;
+}
+.skills-modal-sidebar li.active,.skills-modal-sidebar li:hover {
+  background: #e0e0f9; color: #0984e3;
+}
+.skills-modal-content {
+  flex: 1 1 0%;
+  padding: 2rem 1.5rem;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+@media (max-width:870px) {
+  .skills-modal-card {width: 93vw; height: 90vh; min-width: 0; flex-direction: column;}
+  .skills-modal-sidebar {width: auto; min-width:unset; flex-direction: row; border: none; border-bottom:1px solid #e2e8f0;}
+  .skills-modal-sidebar li {display:inline-block;margin-right:1rem;margin-bottom:0;}
+}
