@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo LIGUTTI - Portfolio</title>
+    <link rel="icon" href="assets/uca.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="logo">
+                <img src="assets/uca.jpg" alt="UCA" class="logo-uca">
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">Présentation</a></li>
+                <li><a href="#education" class="nav-link">Formations</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#experience" class="nav-link">Expériences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#other" class="nav-link">Divers</a></li>
+                <li><a href="#cv" class="nav-link">Mon CV</a></li>
+                <li><a href="#contact" class="nav-link">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="accueil">
+        <div class="hero-content">
+            <div class="profile-container">
+                <img src="assets/profil.jpg" alt="Hugo Ligutti" class="profile-image">
+            </div>
+            <h1>Hugo LIGUTTI</h1>
+            <p class="subtitle">Étudiant en 2e année de BUT Réseaux et Télécommunications</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Présentation</h2>
+                <div class="card">
+                    <div class="about-text">
+                        <h3>À propos de moi</h3>
+                        <br>
+                        <p>Bonjour, je m'appelle Hugo, j'ai 19 ans et je suis originaire d'Issoire dans le Puy-de-Dôme (63500). 
+                        <br><br> Je suis <strong>persévérant</strong>, <strong>autonome</strong> et <strong>sérieux</strong>, 
+                        ainsi que passionné par les nouvelles technologies et le développement. 
+                        <br>J'ai donc décidé d'intégrer le BUT Réseaux et Télécommunications (BUT R&T) spécialisé en cybersécurité à l'Université Clermont Auvergne et je suis actuellement en 2e année de BUT. 
+                        <br><br> Je recherche un stage du 7 avril 2026 jusqu'au 12 juin 2026 inclus dans le
+                        domaine de la cybersécurité ou de l'administration réseaux et systèmes.(voir mes <a href="#skills" style="color: var(--accent-blue);">compétences techniques</a>).
+                        <br>
+                        Mon objectif professionnel après mon BUT est de poursuivre mes études dans le domaine des Réseaux et Systèmes jusqu'au Master en alterance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section section-bg">
+            <div class="container">
+                <h2 class="section-title">Formations</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <span class="timeline-date">2024 - 2025</span>
+                        <div class="timeline-content card">
+                            <h3>BUT Réseaux et Télécommunications - Université Clermont Auvergne (63)</h3>
+                            <img src="assets/R&T.jpg" alt="R&T" class="img-forma">
+                            <h4>Contexte</h4>
+                            <p>Je suis actuellement en 2e année de BUT R&T.</p>
+                            <h4>Description</h4>
+                            <p>Le BUT Réseaux et Télécommunications (R&T) couvre des sujets tels que l'administration des réseaux, la sécurité informatique, les technologies de transmission de données, et la programmation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <span class="timeline-date">2023</span>
+                        <div class="timeline-content card">
+                            <h3>Obtention du Baccalauréat Général au Lycée Lafayette (Clermont-Fr)</h3>
+                            <img src="assets/BAC.jpg" alt="diplôme BAC" class="img-forma">
+                            <h4>Contexte</h4>
+                            <p>Mes spécialités en terminal : Mathématiques et NSI. <br> La spécialité que j'ai abandonnée en Première : Science de l'ingénieur.</p>
+                            <h4>Résultat</h4>
+                            <p>J'ai obtenu la mention Assez Bien au Baccalauréat.</p>
+                            <div class="bouton-forma">
+                                <a href="assets/NotesBac.pdf" download="NotesBac.pdf" target="_blank" class="image-button">
+                                    <span>📄</span> Notes du Baccalauréat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <span class="timeline-date">2022</span>
+                        <div class="timeline-content card">
+                            <h3>Brevet d'Initiation à l'Aéronautique (BIA)</h3>
+                            <img src="assets/BIA.jpg" alt="BIA" class="img-forma">
+                            <h4>Contexte</h4>
+                            <p>J'ai obtenu mon BIA durant l'année de première générale.</p>
+                            <h4>Description</h4>
+                            <p>Le Brevet d'Initiation à l'Aéronautique (BIA) est un diplôme qui atteste des connaissances de base dans le domaine de l'aéronautique. Cette formation couvre divers sujets tels que le fonctionnement des aéronefs, les principes de vol, la météorologie aéronautique, la navigation aérienne, la réglementation et la sécurité.</p>
+                            <h4>Résultat</h4>
+                            <p>J'ai obtenu la mention Bien</p>
+                            <div class="bouton-forma">
+                                <a href="assets/BIA JUSTIF.pdf" download="BIA-LIGUTTI.pdf" target="_blank" class="image-button">
+                                    <span>📄</span> Diplôme et notes du BIA
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Compétences</h2>
+                
+                <div class="alert" style="background: #e7f3fe; border-left: 5px solid #2196F3; padding: 10px; margin-bottom: 2rem; border-radius: 4px;">
+                    <p><strong>Note :</strong> Le pourcentage 100 % correspond à la moyenne maximale qu'un enseignant pourrait attribuer à un élève de BUT R&T.</p>
+                </div>
+
+                <div class="skills-grid">
+                    
+                    <div class="card">
+                        <h3>Sécurité</h3>
+                        <br>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Configuration de pare-feu</span>
+                                <span class="percentage">75%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Dans le cadre de mes études en BUT R&T, j'ai appris à configurer et gérer des pare-feux sous différents systèmes d'exploitation.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était de maîtriser la configuration des pare-feux sous Linux (iptables) et Windows (Windows Defender) pour sécuriser efficacement les systèmes et les réseaux.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>- Configuration des règles de filtrage entrantes et sortantes</p>
+                                        <p>- Mise en place de politiques de sécurité</p>
+                                        <p>- Gestion des ports et protocoles autorisés</p>
+                                        <p>- Surveillance et analyse du trafic réseau</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Analyse de vulnérabilités</span>
+                                <span class="percentage">70%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Dans le cadre de ma formation en cybersécurité, j'ai été formé à l'utilisation d'outils d'analyse de vulnérabilités et à l'évaluation des risques de sécurité.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était d'apprendre à identifier et évaluer les vulnérabilités potentielles dans les systèmes et réseaux, ainsi qu'à proposer des solutions pour les corriger.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>- Utilisation d'outils de scan de vulnérabilités</p>
+                                        <p>- Réalisation de tests de pénétration basiques</p>
+                                        <p>- Analyse des risques de sécurité</p>
+                                        <p>- Rédaction de rapports détaillés sur les vulnérabilités identifiées</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Réseaux</h3>
+                        <br>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Configuration d'un réseau informatique</span>
+                                <span class="percentage">80%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Grâce à mes nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai acquis des compétences en utilisant initialement le logiciel Cisco Packet Tracer, puis en travaillant sur des équipements réels.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>Le but était de maîtriser la configuration de divers appareils et services réseau (ordinateurs, switchs, routeurs, serveurs), d'apprendre à attribuer des adresses réseau correctement, d'utiliser différents protocoles de routage, de vérifier les connexions entre les appareils et de comprendre comment les interconnecter efficacement.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>Pendant les TD et TP, j'ai commencé par utiliser Cisco Packet Tracer pour configurer divers appareils et services, attribuer des adresses réseau, utiliser plusieurs protocoles de routage, et tester les connexions pour m'assurer que tous les appareils puissent communiquer entre eux.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Configuration de machines virtuelles</span>
+                                <span class="percentage">70%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Pendant de nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai développé des compétences dans l'installation et la gestion de machines virtuelles.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était d'apprendre à configurer, installer et gérer des machines virtuelles sur différentes plateformes, ainsi qu'à maîtriser les techniques de sauvegarde, de clonage et les divers types de connexions réseau possibles.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>Au cours des nombreuses séances de TP, j'ai configuré, installé et géré des machines virtuelles sur VMware et VirtualBox. J'ai appris à sauvegarder et cloner des machines virtuelles, et à utiliser différents types de connexions réseau (NAT, PONT, Réseau Privé, Pas de connexion).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Programmation</h3>
+                        <br>
+                        
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="percentage">60%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>En première année, j'ai été introduit aux bases du développement web, en particulier avec HTML et CSS, qui sont les langages fondamentaux pour créer et styliser des pages web.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était de comprendre comment structurer une page web avec HTML et comment utiliser CSS pour la rendre visuellement attrayante et réactive avec les différentes balises à ma disposition.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>Différentes évaluations notées. <br>Exemples : <br>Création visuelle d'un Sudoku en HTML et CSS <br>Projet Final : Portfolio en HTML et CSS</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">PHP</span>
+                                <span class="percentage">55%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 55%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>En première année, j'ai été introduit aux bases du développement web dynamique, en particulier avec le language PHP, qui est un langage fondamental pour créer des pages web dynamiques.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était de comprendre comment on pouvait associer des formulaires HTML avec une variable PHP et comment l'implémenter dans le code pour rendre le visuel plus dynamique et personnalisé.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>Une évaluation noté avec l'utilisation d'une base de donnée. <br>Exemple : <br>Création d'un memory (le jeu de cartes).</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Python</span>
+                                <span class="percentage">80%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>La programmation est une compétence essentielle dans le domaine des réseaux et des télécommunications. Python est souvent utilisé pour automatiser des tâches et développer des scripts utiles.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était d'acquérir une compréhension solide des concepts de base de la programmation, tels que les variables, les boucles, les conditions et les fonctions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Scripts et commandes sous Linux</span>
+                                <span class="percentage">75%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Durant de nombreux travaux dirigés (TD) et travaux pratiques (TP), j'ai acquis des compétences dans l'utilisation des commandes et des scripts Linux.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était de maîtriser l'utilisation des commandes Linux pour manipuler les fichiers (lister, modifier, créer, supprimer) et d'apprendre à créer des scripts BASH pour automatiser certaines tâches, tout en approfondissant mes connaissances sur le fonctionnement des systèmes d'exploitation et le traitement des données.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>De nombreux travaux pratiques (TP) où j'ai dû réutiliser mes connaissances pour répondre à des séries de questions dans un compte rendu.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Télécommunications</h3>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Utilisation d'un oscilloscope</span>
+                                <span class="percentage">70%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Pendant les travaux pratiques (TP) de télécommunications, j'ai appris à utiliser des oscilloscopes, notamment ceux des marques Keysight et Agilent.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était d'apprendre à observer et analyser un ou plusieurs signaux simultanément pour en extraire des informations comme l'amplitude, la fréquence, et la durée à l'état haut. Je devais également maîtriser le réglage des échelles horizontales et verticales ainsi que l'utilisation de fonctions avancées telles que la transformée de Fourier rapide (FFT) pour observer le spectre d'un signal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Utilisation d'un GBF (Générateur de fonction)</span>
+                                <span class="percentage">70%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Pendant les travaux pratiques (TP) de télécommunications, j'ai appris à utiliser des générateurs de signaux (GBF) des marques Agilent et RIGOL.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était de maîtriser la génération de signaux avec différentes amplitudes et fréquences et d'apprendre à utiliser diverses fonctions telles que le réglage de l'impédance, la modulation, et la fonction sweep.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Téléphonie VoIP</h3>
+                        <br>
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Configuration des abonnées</span>
+                                <span class="percentage">72.5%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 72.5%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Pendant les travaux pratiques (TP) de téléphonie, j'ai appris à configurer des abonnés téléphoniques sur un Call Serveur via le logiciel OpenScape Business.</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif pendant ces TP était de prendre en main des outils de configuration présents sur le logiciel OpenScape dans le but de pouvoir réaliser lors d'un examen des manipulations précises sur le logiciel en ne réutilisant aucune prise de note réalisée durant les TP.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>Voici quelques fonctionnalités que j'ai utilisées ou configurées en utilisant OpenScape :</p>
+                                        <ul>
+                                            <li>- La messagerie vocale</li>
+                                            <li>- Le renvoi d'appel</li>
+                                            <li>- La création de groupes d'appel</li>
+                                            <li>- Mise en service d'un Trunk SIP</li>
+                                            <li>- Gestion des licences</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-header">
+                                <span class="tag">Manipulation des téléphones</span>
+                                <span class="percentage">72.5%</span>
+                            </div>
+                            <div class="progress-track">
+                                <div class="progress-fill" style="width: 72.5%"></div>
+                            </div>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>Pendant les travaux pratiques (TP) de téléphonie, j'ai manipulé et configuré des téléphones VoIP de différentes marques (Cisco SPA504G, Unify Openstage 60, Logiciel Softphone X-Lite) ainsi que de différents type (Client SIP, Client TFA).</p>
+                                        <br>
+                                        <h4>Objectif</h4>
+                                        <p>L'objectif était de prendre en main l'installation des téléphones fixe et portable sur le réseau local de l'IUT et de mémoriser les manipulations à effectuer pour les restituer lors de l'examen noté.</p>
+                                        <br>
+                                        <h4>Travaux</h4>
+                                        <p>Sur les appareils téléphoniques nous devions à chaque séance de TP les réinitialiser (Factory Reset) en entrant leurs adresses IP dans le navigateur connecté au réseau local. Ainsi nous devions être rapide et efficace à chaque séance pour ne pas perdre de temps et répondre à toutes les questions dans un compte rendu pour réviser lors de l'évaluation finale.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Qualités</h3>
+                        <br>
+                        <div class="skill-bar">
+                            <span class="tag">Altruiste</span>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>J'ai développé cette compétence altruiste dans le contexte de la réserve en Gendarmerie. En effet, au sein de la réserve, j'ai été régulièrement confronté à des situations nécessitant une grande empathie et un sens profond de l'écoute. Ces expériences m'ont appris à être attentif aux besoins des autres, à fournir un soutien approprié et à agir dans le meilleur intérêt de la communauté. Cela a renforcé ma capacité à rester calme et posé dans des situations stressantes, tout en assurant le bien-être et la sécurité des personnes que je sers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-bar">
+                            <span class="tag">Sang-froid</span>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>J'ai développé cette compétence de sang-froid dans le contexte de la réserve en Gendarmerie. En effet, lors de mes missions en tant que réserviste, j'ai souvent été confronté à des situations stressantes et imprévisibles. Ces expériences m'ont permis d'apprendre à garder mon calme, à analyser rapidement la situation et à prendre des décisions réfléchies sous pression. Cette capacité à rester serein et à gérer efficacement des situations délicates est essentielle pour assurer la sécurité et le bien-être des citoyens, ainsi que pour accomplir les missions de manière professionnelle et efficace.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <span class="tag">Assiduité</span>
+                            <button class="toggle-button" onclick="toggleAccordion(this)">Afficher plus</button>
+                            <div class="skill-details-wrapper">
+                                <div class="skill-details-inner">
+                                    <div class="skill-description">
+                                        <h4>Contexte</h4>
+                                        <p>L'assiduité est une compétence essentielle, surtout dans ma vie professionnelle. En effet, à l'IUT, des règles strictes sont régies concernant la présence de chaque étudiant en cours. Plus précisément, par le biais du site "Odin", chaque absence est comptabilisée et doit être justifiée. Au-delà de 2 absences non justifiées sur l’année, l’usager ne pourra ni être diplômé, ni passer en année supérieure, ni redoubler.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card langue-card">
+                        <h3>Langues</h3>
+                        <br>
+                        <ul>
+                            <li>
+                                <strong>Anglais</strong><br>
+                                <img src="assets/RU.jpg" alt="Royaume-Uni" class="img-langues">
+                            </li>
+                            <li>
+                                <strong>Espagnol</strong><br>
+                                <img src="assets/ESP.png" alt="Espagne" class="img-langues">
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-bg">
+            <div class="container">
+                <h2 class="section-title">Expériences professionnelles</h2>
+                <div class="experience-grid timeline">
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">Depuis août 2024</div>
+                        <div class="timeline-content card">
+                            <h3><strong>Réserviste en gendarmerie - SRJ 63</strong></h3>
+                            <img src="assets/SRJ63.jpg" alt="Ecusson Gendarmerie Auvergne" class="posimg">
+                            <h4>Contexte</h4>
+                            <p>J'ai intégré la réserve opérationnelle de Clermont-Ferrand pour apporter un soutien aux forces de l'ordre dans diverses missions de sécurité publique. Mon engagement a débuté en août 2024 par ma Préparation militaire à la gendarmerie à Sathonay-Camp dans la ville de Lyon, motivé par un désir de servir la communauté et de contribuer à la sécurité nationale.</p>
+                            <br>
+                            <h4>Objectifs</h4>
+                            <p>Mon principal objectif était d'assurer une présence dissuasive sur le terrain et d'intervenir en cas de besoin pour maintenir l'ordre et la tranquillité publique.</p>
+                            <br>
+                            <h4>Travail</h4>
+                            <p>Je participe régulièrement aux patrouilles de surveillance dans les zones urbaines et rurales telles que Thiers et Issoire, visant à prévenir les délits et à rassurer la population par une présence visible et proactive. <br> J'ai contribué à la mise en place de points de contrôle pour vérifier les documents des conducteurs et assurer le respect des règles de la route, garantissant ainsi la sécurité des usagers. <br>J'ai assisté les unités actives lors d'interventions sur des accidents, tels qu'un accident de la route à Tiers où j'ai géré le flux de véhicules passant à proximité.</p>
+                            <br>
+                            <h4>Résultats</h4>
+                            <p>À ce jour, j'ai réalisé au total 8 patrouilles. Lors de ma prestation de serment, j'ai ressenti une immense fierté et un profond sens du devoir. Ce moment solennel a marqué officiellement mon engagement envers la gendarmerie et la communauté. J'ai été promu au grade de Brigadier Chef, ce qui a renforcé ma détermination à exceller dans mes fonctions et à honorer la confiance placée en moi.</p>
+                            <br>
+                            <h4>Impact personnel</h4>
+                            <p>Être réserviste en gendarmerie m'a apporté un sentiment d'accomplissement personnel et de satisfaction. Chaque mission accomplie, chaque intervention réussie, m'a permis de me sentir utile et de voir l'impact positif de mon travail sur la sécurité publique.<br> Mon engagement en tant que réserviste a renforcé ma conviction que chaque individu peut contribuer à la sécurité et au bien-être de la société.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">Février 2024</div>
+                        <div class="timeline-content card">
+                            <h3><strong>Stage d'observation - Net Service Informatique (Clermont-Ferrand)</strong></h3>
+                            <img src="assets/NetS.jpg" alt="Logo NetServiceInformatique" class="posimg">
+                            <h4>Contexte</h4>
+                            <p>Dans le cadre de mes études en Réseau et Télécommunication, j’ai effectué un stage d’observation chez Net Service Informatique en février 2024. <br> Cette entreprise, spécialisée dans les services informatiques et la gestion de réseaux, m’a permis de découvrir le fonctionnement interne d’une entreprise du secteur technologique.</p>
+                            <br>
+                            <h4>Objectifs</h4>
+                            <p>L’objectif principal de ce stage était de me familiariser avec les métiers liés à l’informatique et aux réseaux, tout en observant les différentes étapes du support technique, de la gestion des infrastructures et des interactions avec les clients.</p>
+                            <br>
+                            <h4>Travail</h4>
+                            <p>J’ai suivi les techniciens dans leurs interventions, découvrant les pratiques de maintenance matérielle et logicielle. J’ai assisté à des démonstrations d’installation et de configuration de serveurs, ainsi qu’à des tests de connectivité réseau. J’ai également observé des interactions avec les clients, notamment pour diagnostiquer et résoudre des pannes informatiques.</p>
+                            <br>
+                            <h4>Résultats</h4>
+                            <p>À l’issue de ce stage, j’ai acquis une meilleure compréhension du monde professionnel dans l’informatique, en particulier des défis techniques et des attentes des clients. J’ai également élargi mes connaissances théoriques avec des exemples pratiques, ce qui a consolidé mon intérêt pour ce domaine.</p>
+                            <br>
+                            <h4>Impact personnel</h4>
+                            <p>Cette expérience m’a permis de confirmer mon choix de carrière en réseau et télécommunication. J’ai pris conscience de l’importance de la rigueur et de la méthode dans la résolution de problèmes techniques. Cette immersion m’a également motivé à approfondir mes compétences pour contribuer efficacement dans un environnement similaire à l’avenir.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-content card">
+                            <h3><strong>Travail d'été - Castration de maïs</strong></h3>
+                            <img src="assets/Agri.jpg" alt="Logo AgriEmploi" class="posimg">
+                            <h4>Contexte</h4>
+                            <p>J’ai travaillé durant l’été dans une exploitation agricole spécialisée dans la culture du maïs à Issoire (63500). <br>Ce travail saisonnier nécessitait de la rigueur, de l’endurance et un fort esprit d’équipe.</p>
+                            <br>
+                            <img src="assets/maïs.png" alt="maïs" class="posimg" id="agrandir">
+                            <h4>Objectifs</h4>
+                            <p>Mon objectif principal était de contribuer à l’étape de castration des plants de maïs. <br>Il s’agissait également d’une opportunité pour développer des compétences en travail collectif.</p>
+                            <br>
+                            <h4>Travail</h4>
+                            <p>Mon rôle consistait à enlever les panicules mâles des plants de maïs afin de prévenir l'autopollinisation. <br>Cette tâche exigeait une attention constante et une grande précision pour ne pas endommager les plants. <br>J'ai également collaboré avec mes collègues pour optimiser notre efficacité et respecter les délais imposés par l'exploitation.</p>
+                            <br>
+                            <h4>Résultats</h4>
+                            <p>Grâce à notre travail et notre coordination, nous avons réussi à castrer un nombre significatif de plants de maïs, contribuant ainsi à une récolte de semences de qualité. <br>Notre équipe a atteint les objectifs de production fixés par l'exploitation, ce qui a été reconnu et apprécié par notre employeur. <br>Cette expérience a également renforcé notre esprit d'équipe et notre capacité à travailler sous pression.</p>
+                            <br>
+                            <h4>Impact personnel</h4>
+                            <p>Ce travail saisonnier m'a permis de développer plusieurs compétences essentielles, telles que la rigueur, l'endurance physique et la capacité à travailler en équipe. <br>J'ai également appris à gérer mon temps efficacement et à maintenir un haut niveau de concentration sur des tâches répétitives.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projets</h2>
+                
+                <div class="projects-carousel">
+                    <div class="carousel-track" id="track">
+                        
+                        <div class="carousel-slide">
+                            <a class="project-link" href="projets/projet6/index-p6.html">
+                                <div class="project-card-inner">
+                                    <div class="project-title">
+                                        <h3>Application sous Android Studio</h3>
+                                        <p style="color:var(--text-muted);">Projet de BUT2 en SAE32</p>
+                                    </div>
+                                    <div class="project-tags-group">
+                                        <span class="project-tag-pill">Java</span>
+                                        <span class="project-tag-pill">Sécurité</span>
+                                        <span class="project-tag-pill">Compte Rendu</span>
+                                    </div>
+                                    <img src="assets/projet6-illustration.png" alt="Illustration du projet" class="project-image">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <a class="project-link" href="projets/projet5/index-p5.html">
+                                <div class="project-card-inner">
+                                    <div class="project-title">
+                                        <h3>Projet Intégratif</h3>
+                                        <p style="color:var(--text-muted);">Projet de BUT1 en SAE204</p>
+                                    </div>
+                                    <div class="project-tags-group">
+                                        <span class="project-tag-pill">Réseaux</span>
+                                        <span class="project-tag-pill">Programmation</span>
+                                        <span class="project-tag-pill">Manipulations techniques</span>
+                                    </div>
+                                    <img src="assets/projet5-illustation.png" alt="Illustration du projet" class="project-image">
+                                    <div class="alert" style="background:#fff3cd; color:#856404; padding:5px 10px; border-radius:4px; margin-top:10px;">
+                                        <strong>Le projet est en cours de développement.</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <a class="project-link" href="projets/projet3/index-p3.html">
+                                <div class="project-card-inner">
+                                    <div class="project-title">
+                                        <h3>Vidéo JPO</h3>
+                                        <p style="color:var(--text-muted);">Projet de BUT1 en PPP</p>
+                                    </div>
+                                    <div class="project-tags-group">
+                                        <span class="project-tag-pill">Montage Vidéo</span>
+                                        <span class="project-tag-pill">Vulgarisation</span>
+                                    </div>
+                                    <img src="assets/projet3-illustration.jpg" alt="Illustration du projet" class="project-image">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <a class="project-link" href="projets/projet4/index-p4.html">
+                                <div class="project-card-inner">
+                                    <div class="project-title">
+                                        <h3>Téléphonie VoIP locale</h3>
+                                        <p style="color:var(--text-muted);">Projet de BUT1 - Téléphonie</p>
+                                    </div>
+                                    <div class="project-tags-group">
+                                        <span class="project-tag-pill">Windows</span>
+                                        <span class="project-tag-pill">Manipulations techniques</span>
+                                    </div>
+                                    <img src="assets/projet4-illustration.jpg" alt="Illustration du projet" class="project-image">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <a class="project-link" href="projets/projet1/index-p1.html">
+                                <div class="project-card-inner">
+                                    <div class="project-title">
+                                        <h3>Promotion du BUT (Data)</h3>
+                                        <p style="color:var(--text-muted);">Projet de BUT1 en SAE15</p>
+                                    </div>
+                                    <div class="project-tags-group">
+                                        <span class="project-tag-pill">CSV</span>
+                                        <span class="project-tag-pill">Python</span>
+                                    </div>
+                                    <img src="assets/projet1-illustration.jpg" alt="Illustration du projet" class="project-image">
+                                </div>
+                            </a>
+                        </div>
+
+                    </div> <div class="carousel-nav">
+                        <button class="carousel-btn prev">‹</button>
+                        <div class="carousel-counter"><span id="current">1</span>/<span id="total">5</span></div>
+                        <button class="carousel-btn next">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="other" class="section section-bg">
+            <div class="container">
+                <h2 class="section-title">Divers</h2>
+                <h3>Centres d'intérêt</h3>
+                <br>
+                <div class="other-grid">
+                    
+                    <div class="divers card">
+                        <h3>La musique</h3>
+                        <img src="assets/guitare-piano.jpg" alt="Guitare et Piano" class="interest-image">
+                        <img src="assets/piano.jpg" alt="piano illustration" class="interest-image">
+                        <p>Je suis autodidacte à la guitare et au piano depuis plus de 5 mois.</p>
+                        <br>
+                        <p>J'ai appris quelques riffs et début de morceau à la guitare, en voici quelques exemples de titres :</p>
+                        <ul style="text-align:left; margin-top:1rem; padding-left:1rem;">
+                            <li>• Do I Wanna Know - Arctic Monkeys</li>
+                            <li>• Parisienne Walkways - Gary Moore</li>    
+                            <li>• Smoke on the water - Deep Purple</li>
+                            <li>• Come as you are - Nirvana</li>
+                            <li>• Still loving you - Scorpions</li>
+                        </ul>
+                        <br>
+                        <p>Je joue aussi du Piano cependant j'ai appris moins de chansons qu'à la guitare électrique. Le seul morceau que je sais actuellement bien jouer est : <br><em>Passcaglia - Handel/Halvorsen</em></p>
+                        <p>Le morceau que je suis entrain d'apprendre est : <br><em>The Winner Takes It All - ABBA</em></p>
+                    </div>
+
+                    <div class="divers card">
+                        <h3>Activités en plein air</h3>
+                        <img src="assets/running.jpg" alt="Running" class="interest-image">
+                        <p>Je fais souvent des randonnées à pied en famille durant les weekends ou bien les vacances scolaires chez moi, à Issoire. Ces randonnées varient de 5 à 8 km.</p>
+                        <p>Nos sorties nous permettent de découvrir des paysages magnifiques, de profiter de la nature et de passer du temps de qualité ensemble. Nous aimons explorer différents sentiers, que ce soit en forêt, en montagne ou le long de rivières, et cela nous aide à rester actifs et à nous déconnecter du quotidien.</p>
+                    </div>
+
+                    <div class="divers card">
+                        <h3>Le vélo</h3>
+                        <img src="assets/velo.jpg" alt="Cycling" class="interest-image">
+                        <p>En plus, je fais du vélo pendant mon temps libre avec une distance équivalente à celle que je fais à pied, ce qui me permet de rester en forme et de profiter de la nature d'une autre manière.</p>
+                    </div>
+
+                    <div class="divers card">
+                        <h3>Le badminton</h3>
+                        <img src="assets/USI.jpg" alt="Club USI" class="interest-image">
+                        <img src="assets/bad.jpg" alt="Je joue au bad" class="interest-image" id="agrandir">
+                        <p>J'ai pratiqué du badminton en club à l'USI pendant 6 ans et j'ai arrêté à l'âge de 16 ans. <br>Durant cette période, j'ai participé à plusieurs compétitions locales et régionales, ce qui m'a permis de développer des compétences techniques et stratégiques. J'ai arrêté le badminton au niveau P10 (en double), ce qui correspond à un niveau assez bas, je peux justifier ce niveau par rapport au nombre de compétitions auxquelles j'ai participé (peu de compétitions). Le badminton m'a également appris l'importance du travail d'équipe, de la persévérance et de la discipline. J'ai fait de nombreuses rencontres et j'ai noué des amitiés durables grâce à ce sport.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="cv" class="section">
+            <div class="container cv-container">
+                <h2 class="section-title">Mon CV</h2>
+                <div class="cv-wrapper">
+                    <a href="assets/CV Hugo.pdf" download="CV_LIGUTTI_Hugo.pdf" class="btn-primary" target="_blank">
+                        ⬇ Télécharger mon CV
+                    </a>
+                    <br><br>
+                    <iframe src="assets/CV Hugo.pdf" class="cv-frame"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-bg">
+            <div class="container">
+                <h2 class="section-title">Me contacter</h2>
+                
+                <div class="contact-wrapper">
+                    <div class="info" style="background:#e8f4ff; border-left:4px solid #007bff; padding:1rem; border-radius:4px;">
+                        <p>Pour me contacter, <strong>n'hésitez pas</strong> à me joindre via mon mail professionnel :</p>
+                    </div>
+
+                    <div class="contact-links">
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <a href="mailto:hugo.LIGUTTI@etu.uca.fr" style="font-weight:bold; color:var(--accent-blue);">hugo.LIGUTTI@etu.uca.fr</a>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <img src="assets/linkedin.png" alt="LinkedIn" class="social-logo">
+                            <a href="https://fr.linkedin.com/in/hugoligutti?trk=profile-badge" target="_blank">Mon Linkedin</a>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="assets/github.png" alt="GitHub" class="social-logo">
+                            <a href="https://github.com/LH63500/portfolio" target="_blank">Mon GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Hugo Ligutti - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        // 1. Menu Mobile Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        const links = document.querySelectorAll('.nav-link');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Fermer le menu au clic sur un lien
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // 2. Accordéon Compétences (Fluide)
+        function toggleAccordion(button) {
+            const wrapper = button.nextElementSibling;
+            const isOpened = wrapper.style.gridTemplateRows === "1fr";
+
+            // Ferme tous les autres (optionnel, pour effet "un seul ouvert")
+            document.querySelectorAll('.skill-details-wrapper').forEach(el => el.style.gridTemplateRows = "0fr");
+            document.querySelectorAll('.toggle-button').forEach(btn => btn.innerText = "Afficher plus");
+
+            if (isOpened) {
+                wrapper.style.gridTemplateRows = "0fr";
+                button.innerText = "Afficher plus";
+            } else {
+                wrapper.style.gridTemplateRows = "1fr";
+                button.innerText = "Masquer";
+            }
+        }
+
+        // 3. Carousel Logic
+        const track = document.getElementById('track');
+        const slides = Array.from(track.children);
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const currentCount = document.getElementById('current');
+        const totalCount = document.getElementById('total');
+        
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+        if(totalCount) totalCount.innerText = totalSlides;
+
+        function updateCarousel() {
+            // Déplace le track
+            const amountToMove = -currentIndex * 100;
+            track.style.transform = `translateX(${amountToMove}%)`;
+            if(currentCount) currentCount.innerText = currentIndex + 1;
+        }
+
+        if(nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            });
+        }
+
+        if(prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+        }
+    </script>
+</body>
+</html>
