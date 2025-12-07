@@ -576,7 +576,10 @@
                         ⬇ Télécharger mon CV
                     </a>
                     <br><br>
-                    <iframe src="assets/CV Hugo.pdf" class="cv-frame"></iframe>
+                    <iframe src="assets/CV%20Hugo.pdf" class="cv-frame" title="CV Hugo" loading="lazy"></iframe>
+                    <div id="cv-fallback" style="display:none; margin-top:1rem;">
+                        <p>Si le PDF ne s'affiche pas sur votre appareil, vous pouvez le <a href="assets/CV%20Hugo.pdf" target="_blank" rel="noopener">ouvrir dans un nouvel onglet</a> ou le <a href="assets/CV%20Hugo.pdf" download>télécharger</a>.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -830,6 +833,42 @@
         document.body.style.overflow = '';
         }
         window.addEventListener('keydown', e => { if (e.key === 'Escape') closeSkillsModal(); });
+
+        // ===== MOBILE: Hamburger toggle & CV iframe fallback =====
+        (function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            if (mobileMenu && navLinks) {
+                mobileMenu.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+
+                // Close menu when a nav link is clicked (mobile)
+                navLinks.querySelectorAll('a').forEach(a => {
+                    a.addEventListener('click', () => {
+                        mobileMenu.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+
+            // Basic fallback for CV iframe on small screens: some mobile browsers
+            // don't render PDFs in iframes. If the iframe doesn't report load
+            // within a short timeout on small viewports, show a fallback link.
+            const cvFrame = document.querySelector('.cv-frame');
+            const cvFallback = document.getElementById('cv-fallback');
+            if (cvFrame && cvFallback) {
+                let loaded = false;
+                cvFrame.addEventListener('load', () => { loaded = true; });
+                setTimeout(() => {
+                    if (!loaded && window.matchMedia('(max-width:870px)').matches) {
+                        cvFallback.style.display = 'block';
+                        cvFrame.style.display = 'none';
+                    }
+                }, 1500);
+            }
+        })();
 
 
 
