@@ -103,6 +103,10 @@ footer {
 
 .video {
 	border-radius: 5px;	
+	display: block;
+	margin: 1rem auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .project-image { max-width:100%; height:auto; display:block; margin:1rem auto; }
