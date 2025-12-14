@@ -65,7 +65,7 @@ body {
 }
 /* Hero Section */
 .hero {
-	height: 200vh;
+	min-height: 100vh;
 	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	display: block;
 	align-items: center;
@@ -73,6 +73,7 @@ body {
 	color: white;
 	padding: 2rem;
 	padding-top: 150px;
+	width: 100%;
 }
 .hero-content {
 	text-align: center;

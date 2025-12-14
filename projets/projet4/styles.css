@@ -65,7 +65,7 @@ body {
 }
 /* Hero Section */
 .hero {
-	height: auto;
+	min-height: 100vh;
 	background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 	display: block;
 	align-items: center;
@@ -73,6 +73,7 @@ body {
 	color: white;
 	padding: 2rem;
 	padding-top: 150px;
+	width: 100%;
 }
 .hero-content {
 	text-align: center;
@@ -96,14 +97,18 @@ body {
 	margin-bottom: 2rem;
 }
 
+footer {
+	background: var(--secondary-color);
+}
+
+.video {
+	border-radius: 5px;	
+}
+
 .project-image { max-width:100%; height:auto; display:block; margin:1rem auto; }
 
 html, body { height: 100%; }
 .hero { min-height: 100vh; padding-top: 120px; }
-
-footer {
-	background: var(--secondary-color);
-}
 
 table, th, td {
   border: 3px solid rgb(255, 255, 255);
