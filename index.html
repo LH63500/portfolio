@@ -455,7 +455,6 @@
                                     </div>
                                     <img src="assets/projet5-illustation.png" alt="Illustration du projet" class="project-image">
                                     <div class="alert" style="background:#fff3cd; color:#856404; padding:5px 10px; border-radius:4px; margin-top:10px;">
-                                        <strong>Le projet est en cours de développement.</strong>
                                     </div>
                                 </div>
                             </a>
@@ -505,6 +504,22 @@
                                         <span class="project-tag-pill">Python</span>
                                     </div>
                                     <img src="assets/projet1-illustration.png" alt="Illustration du projet" class="project-image">
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <a class="project-link" href="projets/projet2/index-p2.html">
+                                <div class="project-card-inner">
+                                    <div class="project-title">
+                                        <h3>Portfolio</h3>
+                                        <p style="color:var(--text-muted);">Présentation personnelle</p>
+                                    </div>
+                                    <div class="project-tags-group">
+                                        <span class="project-tag-pill">HTML</span>
+                                        <span class="project-tag-pill">CSS</span>
+                                    </div>
+                                    <img src="assets/projet2-illustration.png" alt="Illustration du projet 2" class="project-image">
                                 </div>
                             </a>
                         </div>
@@ -636,20 +651,25 @@
         
         // ===== CARROUSEL DES PROJETS =====
         let currentSlide = 0;
-        const totalSlides = 5;
-        
+        const slides = document.querySelectorAll('.carousel-slide');
+        let totalSlides = slides.length;
+        // Update the total counter element if present
+        const totalEl = document.getElementById('total');
+        if (totalEl) totalEl.textContent = totalSlides;
+
         function updateCarousel() {
             const track = document.getElementById('track');
             const offset = -currentSlide * 100;
             track.style.transform = `translateX(${offset}%)`;
-            document.getElementById('current').textContent = currentSlide + 1;
+            const currentEl = document.getElementById('current');
+            if (currentEl) currentEl.textContent = currentSlide + 1;
         }
-        
+
         document.querySelector('.carousel-btn.prev').addEventListener('click', () => {
             currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
             updateCarousel();
         });
-        
+
         document.querySelector('.carousel-btn.next').addEventListener('click', () => {
             currentSlide = (currentSlide + 1) % totalSlides;
             updateCarousel();

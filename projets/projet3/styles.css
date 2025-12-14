@@ -18,6 +18,7 @@ body {
 	line-height: 1.6;
 	color: var(--text-color);
 	background-color: var(--background-color);
+	min-height: 100vh;
 }
 /* Navigation */
 .navbar {
@@ -102,6 +103,11 @@ footer {
 .video {
 	border-radius: 5px;	
 }
+
+.project-image { max-width:100%; height:auto; display:block; margin:1rem auto; }
+
+html, body { height: 100%; }
+.hero { min-height: 100vh; padding-top: 120px; }
 
 table, th, td {
   border: 3px solid rgb(255, 255, 255);
