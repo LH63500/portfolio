@@ -138,18 +138,33 @@
         <section id="skills" class="section">
             <div class="container">
                 <h2 class="section-title">Compétences</h2>
-                
+
                 <div class="alert" style="background: #e7f3fe; border-left: 5px solid #2196F3; padding: 10px; margin-bottom: 2rem; border-radius: 4px;">
-                    <p><strong>Note :</strong> les niveaux en pourcentage sont calculés à partir de mes notes en BUT R&T (100 % correspond à la note maximale). Les compétences de la partie « Mises en pratique » n'ont pas de note dédiée : chaque fenêtre « Afficher plus » indique le TP, la SAE ou le stage où je les ai utilisées.</p>
+                    <p><strong>Note :</strong> les pourcentages correspondent à l'évaluation que je fais de mon propre niveau. Les compétences sans pourcentage sont celles que j'ai mises en pratique en TP, en SAE ou en stage : « Afficher plus » indique le contexte et le travail réalisé.</p>
                 </div>
 
-                <div class="skills-grid">
-                    
-                    <div class="card">
+                <div class="skills-filter" role="search">
+                    <label for="skills-search" class="skills-filter-label">Rechercher une compétence ou un outil</label>
+                    <input type="search" id="skills-search" class="skills-search" placeholder="Ex. : VLAN, Active Directory, Zabbix, VPN…" autocomplete="off">
+                    <div class="skills-chips" role="group" aria-label="Filtrer par domaine">
+                        <button type="button" class="skills-chip" data-filter="tout" aria-pressed="true">Tout</button>
+                        <button type="button" class="skills-chip" data-filter="securite" aria-pressed="false">Cybersécurité</button>
+                        <button type="button" class="skills-chip" data-filter="reseaux" aria-pressed="false">Réseaux</button>
+                        <button type="button" class="skills-chip" data-filter="systemes" aria-pressed="false">Systèmes et cloud</button>
+                        <button type="button" class="skills-chip" data-filter="supervision" aria-pressed="false">Supervision</button>
+                        <button type="button" class="skills-chip" data-filter="dev" aria-pressed="false">Programmation</button>
+                        <button type="button" class="skills-chip" data-filter="telecoms" aria-pressed="false">Télécoms</button>
+                        <button type="button" class="skills-chip" data-filter="telephonie" aria-pressed="false">Téléphonie</button>
+                    </div>
+                    <p class="skills-count" id="skills-count" aria-live="polite"></p>
+                </div>
+
+                <div class="skills-grid" id="skills-grid">
+
+                    <div class="card skill-card" data-cat="securite">
                         <h3>Sécurité</h3>
                         <br>
-                        
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="firewall">
                             <div class="skill-header">
                                 <span class="tag">Configuration de pare-feu</span>
                                 <span class="percentage">50%</span>
@@ -159,8 +174,7 @@
                             </div>
                             <button class="toggle-button" data-skill="firewall">Afficher plus</button>
                         </div>
-
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="vuln">
                             <div class="skill-header">
                                 <span class="tag">Analyse de vulnérabilités</span>
                                 <span class="percentage">70%</span>
@@ -170,13 +184,36 @@
                             </div>
                             <button class="toggle-button" data-skill="vuln">Afficher plus</button>
                         </div>
+                        <div class="skill-bar" data-skill-row="stormshield">
+                            <span class="tag">Pare-feu Stormshield (SAE 4.1)</span>
+                            <button class="toggle-button" data-skill="stormshield">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="opnsense">
+                            <span class="tag">OPNsense et pfSense</span>
+                            <button class="toggle-button" data-skill="opnsense">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="iptables">
+                            <span class="tag">iptables et portail captif</span>
+                            <button class="toggle-button" data-skill="iptables">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="pentest">
+                            <span class="tag">Test d'intrusion en boîte noire</span>
+                            <button class="toggle-button" data-skill="pentest">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="attacks">
+                            <span class="tag">Attaques réseau en lab</span>
+                            <button class="toggle-button" data-skill="attacks">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="agentia">
+                            <span class="tag">Agent IA d'audit (SAE 5.01, en cours)</span>
+                            <button class="toggle-button" data-skill="agentia">Afficher plus</button>
+                        </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card skill-card" data-cat="reseaux">
                         <h3>Réseaux</h3>
                         <br>
-                        
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="network">
                             <div class="skill-header">
                                 <span class="tag">Configuration d'un réseau informatique</span>
                                 <span class="percentage">80%</span>
@@ -186,8 +223,7 @@
                             </div>
                             <button class="toggle-button" data-skill="network">Afficher plus</button>
                         </div>
-
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="vm">
                             <div class="skill-header">
                                 <span class="tag">Configuration de machines virtuelles</span>
                                 <span class="percentage">70%</span>
@@ -197,13 +233,96 @@
                             </div>
                             <button class="toggle-button" data-skill="vm">Afficher plus</button>
                         </div>
+                        <div class="skill-bar" data-skill-row="mpls">
+                            <span class="tag">OSPF et MPLS sur GNS3</span>
+                            <button class="toggle-button" data-skill="mpls">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="gpon">
+                            <span class="tag">FTTH et GPON</span>
+                            <button class="toggle-button" data-skill="gpon">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="lte">
+                            <span class="tag">Réseau cellulaire 4G</span>
+                            <button class="toggle-button" data-skill="lte">Afficher plus</button>
+                        </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card skill-card" data-cat="reseaux">
+                        <h3>Services réseau</h3>
+                        <br>
+                        <div class="skill-bar" data-skill-row="rds">
+                            <span class="tag">Services Bureau à distance et certificats</span>
+                            <button class="toggle-button" data-skill="rds">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="dns">
+                            <span class="tag">DHCP, DNS et DNSSEC</span>
+                            <button class="toggle-button" data-skill="dns">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="services">
+                            <span class="tag">FTP, SSH, SMTP et LDAP</span>
+                            <button class="toggle-button" data-skill="services">Afficher plus</button>
+                        </div>
+                    </div>
+
+                    <div class="card skill-card" data-cat="systemes">
+                        <h3>Systèmes et virtualisation</h3>
+                        <br>
+                        <div class="skill-bar" data-skill-row="winad">
+                            <span class="tag">Windows Server et Active Directory</span>
+                            <button class="toggle-button" data-skill="winad">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="esxi">
+                            <span class="tag">VMware ESXi et iLO</span>
+                            <button class="toggle-button" data-skill="esxi">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="proxmox">
+                            <span class="tag">Proxmox VE et Tailscale</span>
+                            <button class="toggle-button" data-skill="proxmox">Afficher plus</button>
+                        </div>
+                    </div>
+
+                    <div class="card skill-card" data-cat="systemes">
+                        <h3>Cloud et automatisation</h3>
+                        <br>
+                        <div class="skill-bar" data-skill-row="containers">
+                            <span class="tag">Conteneurs (LXC, Podman, Docker)</span>
+                            <button class="toggle-button" data-skill="containers">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="ansible">
+                            <span class="tag">Ansible</span>
+                            <button class="toggle-button" data-skill="ansible">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="terraform">
+                            <span class="tag">Terraform et LocalStack</span>
+                            <button class="toggle-button" data-skill="terraform">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="powershell">
+                            <span class="tag">PowerShell</span>
+                            <button class="toggle-button" data-skill="powershell">Afficher plus</button>
+                        </div>
+                    </div>
+
+                    <div class="card skill-card" data-cat="supervision">
+                        <h3>Supervision et SIEM</h3>
+                        <br>
+                        <div class="skill-bar" data-skill-row="zabbix">
+                            <span class="tag">Supervision réseau avec Zabbix</span>
+                            <button class="toggle-button" data-skill="zabbix">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="splunk">
+                            <span class="tag">SIEM Splunk</span>
+                            <button class="toggle-button" data-skill="splunk">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="wef">
+                            <span class="tag">Collecte de logs Windows</span>
+                            <button class="toggle-button" data-skill="wef">Afficher plus</button>
+                        </div>
+                    </div>
+
+                    <div class="card skill-card" data-cat="dev">
                         <h3>Programmation</h3>
                         <br>
-                        
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="htmlcss">
                             <div class="skill-header">
                                 <span class="tag">HTML/CSS</span>
                                 <span class="percentage">60%</span>
@@ -213,8 +332,7 @@
                             </div>
                             <button class="toggle-button" data-skill="htmlcss">Afficher plus</button>
                         </div>
-
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="php">
                             <div class="skill-header">
                                 <span class="tag">PHP</span>
                                 <span class="percentage">55%</span>
@@ -224,8 +342,7 @@
                             </div>
                             <button class="toggle-button" data-skill="php">Afficher plus</button>
                         </div>
-
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="python">
                             <div class="skill-header">
                                 <span class="tag">Python</span>
                                 <span class="percentage">80%</span>
@@ -235,8 +352,7 @@
                             </div>
                             <button class="toggle-button" data-skill="python">Afficher plus</button>
                         </div>
-
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="linux">
                             <div class="skill-header">
                                 <span class="tag">Scripts et commandes sous Linux</span>
                                 <span class="percentage">75%</span>
@@ -246,23 +362,34 @@
                             </div>
                             <button class="toggle-button" data-skill="linux">Afficher plus</button>
                         </div>
+                        <div class="skill-bar" data-skill-row="android">
+                            <span class="tag">Application Android Coffre-Fort</span>
+                            <button class="toggle-button" data-skill="android">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="mysql">
+                            <span class="tag">Bases de données MySQL</span>
+                            <button class="toggle-button" data-skill="mysql">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="pydata">
+                            <span class="tag">Traitement de données en Python</span>
+                            <button class="toggle-button" data-skill="pydata">Afficher plus</button>
+                        </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card skill-card" data-cat="telecoms">
                         <h3>Télécommunications</h3>
                         <br>
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="oscillo">
                             <div class="skill-header">
                                 <span class="tag">Utilisation d'un oscilloscope</span>
                                 <span class="percentage">50%</span>
                             </div>
                             <div class="progress-track">
-                                <div class="progress-fill" style="width: 70%"></div>
+                                <div class="progress-fill" style="width: 50%"></div>
                             </div>
                             <button class="toggle-button" data-skill="oscillo">Afficher plus</button>
                         </div>
-
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="gbf">
                             <div class="skill-header">
                                 <span class="tag">Utilisation d'un GBF (Générateur de fonction)</span>
                                 <span class="percentage">70%</span>
@@ -272,12 +399,28 @@
                             </div>
                             <button class="toggle-button" data-skill="gbf">Afficher plus</button>
                         </div>
+                        <div class="skill-bar" data-skill-row="modul">
+                            <span class="tag">Modulations numériques</span>
+                            <button class="toggle-button" data-skill="modul">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="sdr">
+                            <span class="tag">Transmissions radio avec Adalm Pluto</span>
+                            <button class="toggle-button" data-skill="sdr">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="cables">
+                            <span class="tag">Câbles cuivre et fibre optique</span>
+                            <button class="toggle-button" data-skill="cables">Afficher plus</button>
+                        </div>
+                        <div class="skill-bar" data-skill-row="antennes">
+                            <span class="tag">Antennes et TV satellite</span>
+                            <button class="toggle-button" data-skill="antennes">Afficher plus</button>
+                        </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card skill-card" data-cat="telephonie">
                         <h3>Téléphonie VoIP</h3>
                         <br>
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="abonnes">
                             <div class="skill-header">
                                 <span class="tag">Configuration des abonnés</span>
                                 <span class="percentage">72.5%</span>
@@ -287,8 +430,7 @@
                             </div>
                             <button class="toggle-button" data-skill="abonnes">Afficher plus</button>
                         </div>
-
-                        <div class="skill-bar">
+                        <div class="skill-bar" data-skill-row="tel">
                             <div class="skill-header">
                                 <span class="tag">Manipulation des téléphones</span>
                                 <span class="percentage">72.5%</span>
@@ -300,186 +442,15 @@
                         </div>
                     </div>
 
-                    
-
-                    
-
-                    
-
-                </div>
-
-                <h3 class="skills-subtitle">Mises en pratique en TP, en SAE et en stage</h3>
-                <div class="skills-grid">
-
-                    <div class="card">
-                        <h3>Pare-feu et VPN</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">Pare-feu Stormshield (SAE 4.1)</span>
-                            <button class="toggle-button" data-skill="stormshield">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">OPNsense et pfSense</span>
-                            <button class="toggle-button" data-skill="opnsense">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">iptables et portail captif</span>
-                            <button class="toggle-button" data-skill="iptables">Afficher plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Supervision et SIEM</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">Supervision réseau avec Zabbix</span>
-                            <button class="toggle-button" data-skill="zabbix">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">SIEM Splunk</span>
-                            <button class="toggle-button" data-skill="splunk">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Collecte de logs Windows</span>
-                            <button class="toggle-button" data-skill="wef">Afficher plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Systèmes et virtualisation</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">Windows Server et Active Directory</span>
-                            <button class="toggle-button" data-skill="winad">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">VMware ESXi et iLO</span>
-                            <button class="toggle-button" data-skill="esxi">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Proxmox VE et Tailscale</span>
-                            <button class="toggle-button" data-skill="proxmox">Afficher plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Services réseau</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">Services Bureau à distance et certificats</span>
-                            <button class="toggle-button" data-skill="rds">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">DHCP, DNS et DNSSEC</span>
-                            <button class="toggle-button" data-skill="dns">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">FTP, SSH, SMTP et LDAP</span>
-                            <button class="toggle-button" data-skill="services">Afficher plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Audit et attaques</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">Test d'intrusion en boîte noire</span>
-                            <button class="toggle-button" data-skill="pentest">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Attaques réseau en lab</span>
-                            <button class="toggle-button" data-skill="attacks">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Agent IA d'audit (SAE 5.01, en cours)</span>
-                            <button class="toggle-button" data-skill="agentia">Afficher plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Réseaux opérateurs et accès</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">OSPF et MPLS sur GNS3</span>
-                            <button class="toggle-button" data-skill="mpls">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">FTTH et GPON</span>
-                            <button class="toggle-button" data-skill="gpon">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Réseau cellulaire 4G</span>
-                            <button class="toggle-button" data-skill="lte">Afficher plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Cloud et automatisation</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">Conteneurs (LXC, Podman, Docker)</span>
-                            <button class="toggle-button" data-skill="containers">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Ansible</span>
-                            <button class="toggle-button" data-skill="ansible">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Terraform et LocalStack</span>
-                            <button class="toggle-button" data-skill="terraform">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">PowerShell</span>
-                            <button class="toggle-button" data-skill="powershell">Afficher plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Télécoms en pratique</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">Modulations numériques</span>
-                            <button class="toggle-button" data-skill="modul">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Câbles cuivre et fibre optique</span>
-                            <button class="toggle-button" data-skill="cables">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Antennes et TV satellite</span>
-                            <button class="toggle-button" data-skill="antennes">Afficher plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Développement</h3>
-                        <br>
-                        <div class="skill-bar">
-                            <span class="tag">Application Android Coffre-Fort</span>
-                            <button class="toggle-button" data-skill="android">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Bases de données MySQL</span>
-                            <button class="toggle-button" data-skill="mysql">Afficher plus</button>
-                        </div>
-                        <div class="skill-bar">
-                            <span class="tag">Traitement de données en Python</span>
-                            <button class="toggle-button" data-skill="pydata">Afficher plus</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="skills-grid skills-grid--extra">
-                    <div class="card tools-card">
+                    <div class="card tools-card skill-card" data-cat="outils">
                         <h3>Outils utilisés</h3>
                         <br>
                         <ul class="tools-list">
-                            <li>Wireshark</li><li>Nmap</li><li>Scapy</li><li>Cisco Packet Tracer</li><li>GNS3</li><li>OPNsense</li><li>pfSense</li><li>Stormshield</li><li>iptables</li><li>Zabbix</li><li>Splunk</li><li>VMware ESXi</li><li>Proxmox VE</li><li>VirtualBox</li><li>Docker</li><li>LXC</li><li>Ansible</li><li>Terraform</li><li>Active Directory</li><li>BIND9</li><li>Kali Linux</li><li>Burp Suite</li><li>Metasploit</li><li>OpenScape Business</li><li>Open5GS</li><li>Matlab</li><li>LabVIEW</li>
+                            <li>Wireshark</li><li>Nmap</li><li>Scapy</li><li>Cisco Packet Tracer</li><li>GNS3</li><li>OPNsense</li><li>pfSense</li><li>Stormshield</li><li>iptables</li><li>Zabbix</li><li>Splunk</li><li>VMware ESXi</li><li>Proxmox VE</li><li>VirtualBox</li><li>Docker</li><li>LXC</li><li>Ansible</li><li>Terraform</li><li>Active Directory</li><li>BIND9</li><li>Kali Linux</li><li>Burp Suite</li><li>Metasploit</li><li>OpenScape Business</li><li>Open5GS</li><li>Matlab</li><li>LabVIEW</li><li>Adalm Pluto</li>
                         </ul>
                     </div>
 
-                    <div class="card">
+                    <div class="card skill-card" data-cat="qualites">
                         <h3>Qualités</h3>
                         <br>
                         <div class="skill-bar">
@@ -498,7 +469,7 @@
                         </div>
                     </div>
 
-                    <div class="card langue-card">
+                    <div class="card langue-card skill-card" data-cat="langues">
                         <h3>Langues</h3>
                         <br>
                         <ul>
@@ -513,6 +484,7 @@
                         </ul>
                     </div>
                 </div>
+                <p class="skills-empty" id="skills-empty" hidden>Aucune compétence ne correspond. Essayez un autre mot-clé, ou <button type="button" class="skills-reset">affichez tout</button>.</p>
             </div>
 
             <!-- MODALE COMPÉTENCES -->
@@ -892,6 +864,59 @@
             renderDots();
         })();
 
+                // ===== FILTRE DES COMPÉTENCES =====
+        (function() {
+            const grid = document.getElementById('skills-grid');
+            if (!grid) return;
+            const input = document.getElementById('skills-search');
+            const chips = document.querySelectorAll('.skills-chip');
+            const count = document.getElementById('skills-count');
+            const empty = document.getElementById('skills-empty');
+            const norm = t => (t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+            let cat = 'tout';
+            function rowText(row) {
+                const key = row.dataset.skillRow;
+                const d = (typeof skillsDetails !== 'undefined' && skillsDetails[key]) ? skillsDetails[key].content.join(' ').replace(/<[^>]+>/g, ' ') : '';
+                return norm(row.textContent + ' ' + d);
+            }
+            function apply() {
+                const q = norm(input.value.trim());
+                let shown = 0;
+                grid.querySelectorAll('.skill-card').forEach(card => {
+                    const inCat = cat === 'tout' || card.dataset.cat === cat;
+                    const rows = card.querySelectorAll('[data-skill-row]');
+                    let visible = 0;
+                    if (rows.length) {
+                        rows.forEach(r => {
+                            const ok = inCat && (!q || rowText(r).includes(q) || norm(card.querySelector('h3').textContent).includes(q));
+                            r.hidden = !ok;
+                            if (ok) visible++;
+                        });
+                    } else {
+                        const ok = (cat === 'tout' && (!q || norm(card.textContent).includes(q)));
+                        card.querySelectorAll('.tools-list li').forEach(li => li.classList.toggle('is-match', !!q && norm(li.textContent).includes(q)));
+                        visible = ok ? 1 : 0;
+                    }
+                    card.hidden = visible === 0;
+                    if (rows.length) shown += visible;
+                });
+                count.textContent = (q || cat !== 'tout') ? shown + (shown > 1 ? ' compétences correspondent' : ' compétence correspond') : '';
+                empty.hidden = shown !== 0 || (!q && cat === 'tout');
+            }
+            chips.forEach(c => c.addEventListener('click', () => {
+                cat = c.dataset.filter;
+                chips.forEach(x => x.setAttribute('aria-pressed', x === c ? 'true' : 'false'));
+                apply();
+            }));
+            input.addEventListener('input', apply);
+            document.querySelector('.skills-reset').addEventListener('click', () => {
+                input.value = ''; cat = 'tout';
+                chips.forEach(x => x.setAttribute('aria-pressed', x.dataset.filter === 'tout' ? 'true' : 'false'));
+                apply(); input.focus();
+            });
+            document.addEventListener('DOMContentLoaded', apply);
+        })();
+
                 // Contenus par compétence ("clé": description structurée pour la sidebar et le contenu)
         const skillsDetails = {
         firewall: {nav:["Contexte","Objectif","Travaux"],content:[`<h4>Contexte</h4><p>Dans le cadre de mes études en BUT R&T et de mon stage, j'ai configuré plusieurs types de pare-feu.</p>`,`<h4>Objectif</h4><p>Filtrer les flux et segmenter un réseau.</p>`,`<h4>Travaux</h4><p>- iptables sous Linux (filtrage et NAT)<br>- Stormshield (SAE 4.1)<br>- OPNsense (stage) et pfSense (TP d'audit)<br>- Règles entrantes et sortantes, DMZ, redirections de ports</p>`]},
@@ -1020,6 +1045,7 @@
         android: {nav:["Contexte","Objectif","Travaux"],content:[`<h4>Contexte</h4><p>Projet en Java sous Android Studio.</p>`,`<h4>Objectif</h4><p>Créer une application qui protège des documents personnels.</p>`,`<h4>Travaux</h4><p>- Rédaction du cahier des charges<br>- Création de compte, connexion, mot de passe masqué<br>- Récupération du compte par question secrète<br>- Suppression sécurisée du coffre<br>- Gestion des documents et des dossiers</p>`]},
         mysql: {nav:["Contexte","Objectif","Travaux"],content:[`<h4>Contexte</h4><p>Ressource de bases de données.</p>`,`<h4>Objectif</h4><p>Exploiter une base de données relationnelle.</p>`,`<h4>Travaux</h4><p>- Installation de MySQL sur Debian<br>- Fonctions et procédures stockées<br>- Utilisation de curseurs et de déclencheurs</p>`]},
         pydata: {nav:["Contexte","Objectif","Travaux"],content:[`<h4>Contexte</h4><p>SAE 1.5 de BUT 1 : traitement de données.</p>`,`<h4>Objectif</h4><p>Analyser un fichier de données avec un script.</p>`,`<h4>Travaux</h4><p>- Lecture d'un fichier CSV d'emploi du temps avec NumPy<br>- Détection des créneaux sans intervenant<br>- Extraction et comptage des matières</p>`]},
+        sdr: {nav:["Contexte","Objectif","Travaux"],content:[`<h4>Contexte</h4><p>TP de télécommunications en BUT 3 (ressource R503) avec une radio logicielle Adalm Pluto pilotée sous Matlab.</p>`,`<h4>Objectif</h4><p>Émettre, recevoir et décoder des transmissions numériques sans fil.</p>`,`<h4>Travaux</h4><p>- Chaîne de transmission QPSK puis π/4-DQPSK<br>- Capture d'une station météo sans fil à 433 MHz<br>- Récupération et décodage de la trame du capteur</p>`]},
         };
 
 
