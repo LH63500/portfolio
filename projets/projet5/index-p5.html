@@ -26,22 +26,56 @@
         </div>
     </nav>
     <header class="hero" id="accueil">
-        <h2>Projet n°2 : Projet Intégratif</h2>
+        <h2>Projet n°2 : Projet intégratif (SAE 2.04)</h2>
         <h4>Contexte :</h4>
         <br>
-        <p>Dans le cadre de la matière "Situation d'apprentissage et d'évaluation n°24" (SAE2.04), nous devons réaliser un projet intégratif dans un groupe de 4 personnes regroupant toutes les connaisances techniques qu'on a vu depuis le début de l'année en réseaux, programmation et PPP.</p>
+        <p>Dans le cadre de la SAE 2.04 de 1re année, nous avons réalisé en équipe de 4 un projet intégratif qui regroupe tout ce que nous avions vu dans l'année en réseaux, en programmation et en PPP.</p>
+        <br>
+        <p>Nous jouions le rôle d'une entreprise de services informatique chargée de mettre en place l'infrastructure d'un client fictif, un café baptisé <strong>CoffeeShop</strong> : réseau pour les employés, Wi-Fi pour les clients, serveurs et téléphonie.</p>
         <br>
         <h4>Objectif :</h4>
         <br>
-        <p>L'objectif principal de ce projet est d'élaborer une infrastructure réseau fonctionnelle avec une infrastructure minimale par défaut.</p>
+        <p>Concevoir et mettre en service une infrastructure réseau complète et sécurisée, puis la documenter.</p>
         <br>
-        <p>L'infrastructure par défaut :  Un switch, des VLAN (communication entre services autorisés), du Wifi, du DHCP, un routeur de périphérie, Un serveur windows avec un Active Directory, Un serveur linux, Un serveur téléphonique
-</p>
+        <figure class="project-figure">
+            <img src="../../assets/projet5-infra.jpg" alt="Schéma de l'infrastructure réseau du client CoffeeShop">
+            <figcaption>Infrastructure mise en place pour le client CoffeeShop</figcaption>
+        </figure>
         <br>
         <h4>Travaux :</h4>
         <br>
+        <p><strong>Réseau</strong> :</p>
+        <ul>
+            <li>Segmentation en VLAN : administration (10), invités (20), serveurs (30), secrétariat (40), téléphonie (50) et DMZ (100)</li>
+            <li>Switch : ports en mode access par VLAN, lien trunk vers le routeur</li>
+            <li>Routeur Cisco : sous-interfaces pour le routage inter-VLAN, NAT, ACL, relais DHCP (ip helper-address) et accès SSH</li>
+            <li>Pare-feu : NAT et règles de filtrage vers le réseau de l'IUT</li>
+            <li>Borne Wi-Fi D-Link dans le VLAN invités, avec une page web de connexion avant l'accès à Internet</li>
+        </ul>
+        <br>
+        <p><strong>Serveurs et services</strong> :</p>
+        <ul>
+            <li>Installation des postes clients Windows 10 et Debian</li>
+            <li>Windows Server : Active Directory, groupes et utilisateurs, service DHCP</li>
+            <li>Serveur Linux : DNS avec BIND9, site web avec XAMPP, transfert de fichiers avec vsftpd, messagerie avec Postfix et Dovecot</li>
+        </ul>
+        <br>
+        <p><strong>Sécurité</strong> :</p>
+        <ul>
+            <li>Protection contre l'usurpation DHCP avec le DHCP snooping sur le switch, testée en branchant un poste sur un port non autorisé</li>
+            <li>Script PowerShell qui analyse les journaux DHCP pour détecter une attaque par épuisement d'adresses (DHCP starvation)</li>
+        </ul>
+        <br>
         <h4>Résultat :</h4>
-
+        <br>
+        <p>L'infrastructure a été documentée dans un site web développé en HTML, CSS et PHP : la vitrine du café, avec un formulaire de contact, et une partie « Infrastructure » qui regroupe une vingtaine de fiches de compte rendu, une par élément configuré.</p>
+        <br>
+        <h4>Outils et technologies :</h4>
+        <br>
+        <ul class="tags">
+            <li>VLAN</li><li>Cisco IOS</li><li>ACL</li><li>NAT</li><li>DHCP snooping</li><li>Windows Server</li><li>Active Directory</li><li>BIND9</li><li>XAMPP</li><li>vsftpd</li><li>Postfix</li><li>PowerShell</li><li>HTML / CSS / PHP</li>
+        </ul>
+        <br>
     </header>
 </body>
 </html>

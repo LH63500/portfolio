@@ -116,3 +116,16 @@ table, th, td {
   background-color: rgb(0, 0, 0);
   padding: 3px;
 }
+.project-figure {
+	background: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	max-width: 820px;
+	margin: 1rem 0;
+}
+.project-figure img { width: 100%; height: auto; display: block; border-radius: 6px; }
+.project-figure figcaption { color: #2d3436; font-size: 0.9rem; margin-top: 6px; text-align: center; }
+.hero ul { margin-left: 1.5rem; }
+.hero li { margin-bottom: 0.3rem; }
+.hero .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin-left: 0; }
+.hero .tags li { background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.4); border-radius: 20px; padding: 2px 12px; font-size: 0.9rem; }
