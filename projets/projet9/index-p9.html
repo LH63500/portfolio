@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo LIGUTTI - Supervision réseau et SIEM</title>
+    <link rel="icon" href="../../assets/uca.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../../index.html#projects"><img src="../../assets/accueil-illustration.png" alt="Retour au portfolio" class="logo-accueil"></a>
+            </div>
+            <h1>Projet n°9</h1>
+        </div>
+    </nav>
+
+    <header class="hero" id="accueil">
+        <h2>Projet n°9 : Supervision réseau et SIEM</h2>
+        <br>
+        <h4>Contexte :</h4>
+        <br>
+        <p>Ressources de supervision des réseaux et de supervision de la sécurité en 3e année de BUT R&T. Les TP de supervision de la sécurité ont été réalisés en binôme.</p>
+        <br>
+        <h4>Objectif :</h4>
+        <br>
+        <p>Mettre en place les deux briques de surveillance d'un système d'information : la supervision de l'état des équipements, et la centralisation des journaux pour détecter les incidents de sécurité.</p>
+        <br>
+        <figure class="project-figure">
+            <img src="../../assets/projet9-splunk.jpg" alt="Recherche dans Splunk sur les journaux Windows remontés par le collecteur">
+            <figcaption>Recherche dans Splunk sur les journaux Windows remontés par le collecteur</figcaption>
+        </figure>
+        <br>
+        <h4>Travaux :</h4>
+        <br>
+        <p><strong>Supervision réseau avec Zabbix</strong> :</p>
+        <br>
+        <ul>
+            <li>Installation du serveur Zabbix (le dépôt du sujet étant obsolète, adaptation vers Zabbix 7.0 LTS sur Debian 12)</li>
+            <li>Agent Zabbix sur des VM, en mode actif et passif</li>
+            <li>Supervision SNMP d'un routeur Cisco</li>
+            <li>Configuration de l'architecture « TechCorp »</li>
+        </ul>
+        <br>
+        <p><strong>Collecte des journaux Windows</strong>, en suivant le guide de l'ANSSI sur la journalisation en environnement Active Directory :</p>
+        <br>
+        <ul>
+            <li>Création d'un domaine Active Directory</li>
+            <li>Collecteur WEC et postes WEF, transfert par WinRM</li>
+            <li>Configuration diffusée par GPO</li>
+        </ul>
+        <br>
+        <p><strong>SIEM Splunk</strong> :</p>
+        <br>
+        <ul>
+            <li>Mise en service du SIEM et ouverture du port de réception 9997</li>
+            <li>Universal Forwarders sur Windows et sur Debian (syslog, auth.log)</li>
+            <li>Compte analyste séparé du compte administrateur</li>
+            <li>Recherches dans les journaux et étude des règles de détection Sigma</li>
+        </ul>
+        <br>
+        <h4>Outils et technologies :</h4>
+        <br>
+        <ul class="tags">
+            <li>Zabbix</li>
+            <li>SNMP</li>
+            <li>Splunk</li>
+            <li>Universal Forwarder</li>
+            <li>WEF / WEC</li>
+            <li>WinRM</li>
+            <li>Active Directory</li>
+            <li>Sigma</li>
+        </ul>
+        <br>
+    </header>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo LIGUTTI - Stage : LAB de Services Bureau à distance sécurisé par certificats</title>
+    <link rel="icon" href="../../assets/uca.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../../index.html#projects"><img src="../../assets/accueil-illustration.png" alt="Retour au portfolio" class="logo-accueil"></a>
+            </div>
+            <h1>Projet n°7</h1>
+        </div>
+    </nav>
+
+    <header class="hero" id="accueil">
+        <h2>Projet n°7 : Stage : LAB de Services Bureau à distance sécurisé par certificats</h2>
+        <br>
+        <h4>Contexte :</h4>
+        <br>
+        <p>Stage de 2e année de BUT R&T, d'avril à juin 2026, chez <strong>Neyrial Informatique</strong>, une ESN de La Pardieu (Clermont-Ferrand) spécialisée dans l'hébergement, l'infogérance et la cybersécurité.</p>
+        <br>
+        <p>J'ai intégré le service <strong>RUN support/supervision</strong> (11 techniciens), qui traite les demandes d'assistance des clients et assure le maintien en condition opérationnelle de leurs infrastructures.</p>
+        <br>
+        <h4>Objectif :</h4>
+        <br>
+        <p>Un client souhaitait que ses salariés se connectent en <strong>Bureau à distance (RDP)</strong> avec une <strong>authentification par certificats</strong>, délivrés par une autorité de certification interne.</p>
+        <br>
+        <p>Son infrastructure étant critique, ma mission était d'abord de reproduire l'architecture dans un environnement de test (LAB) en atelier, pour valider chaque étape avant toute intervention en production.</p>
+        <br>
+        <figure class="project-figure">
+            <img src="../../assets/projet7-lab.jpg" alt="Schéma du LAB que j'ai conçu et déployé pendant mon stage">
+            <figcaption>Schéma du LAB que j'ai conçu et déployé pendant mon stage</figcaption>
+        </figure>
+        <br>
+        <h4>Travaux :</h4>
+        <br>
+        <p>Préparation du matériel et du réseau :</p>
+        <br>
+        <ul>
+            <li>Installation d'<strong>OPNsense</strong> sur un pare-feu Sophos XG 230 : interfaces WAN et LAN, DHCP, règles de filtrage, redirections de ports (dNAT)</li>
+            <li>Serveur HPE ProLiant ML30 Gen10 Plus : prise en main de l'<strong>iLO</strong> et stockage en <strong>RAID 1</strong></li>
+            <li>Installation de l'hyperviseur <strong>VMware ESXi</strong></li>
+            <li>Switch HP 1810 : <strong>VLAN</strong> en trunk et <strong>agrégation LACP</strong> avec le pare-feu</li>
+            <li>Segmentation en trois VLAN : management, serveurs RDS et DMZ</li>
+        </ul>
+        <br>
+        <p>Déploiement de l'architecture RDS sur 4 serveurs Windows Server 2022 :</p>
+        <br>
+        <ul>
+            <li>Contrôleur de domaine Active Directory</li>
+            <li>Hôte de session Bureau à distance</li>
+            <li>Autorité de certification interne</li>
+            <li>Passerelle Bureau à distance placée en DMZ</li>
+        </ul>
+        <br>
+        <h4>Autres missions pendant le stage :</h4>
+        <br>
+        <ul>
+            <li>Analyses de réseaux clients, documentées dans ITGlue</li>
+            <li>Mises à jour de switchs, NAS et serveurs</li>
+            <li>VLAN, stacks de switchs et trunks LACP</li>
+            <li>Virtualisation d'une machine physique vers VMware</li>
+            <li>Assistance téléphonique aux utilisateurs</li>
+            <li>Une semaine sur le terrain dans un lycée : installation et brassage de switchs dans 3 baies, configuration de VLAN</li>
+        </ul>
+        <br>
+        <h4>Outils et technologies :</h4>
+        <br>
+        <ul class="tags">
+            <li>OPNsense</li>
+            <li>VMware ESXi</li>
+            <li>HPE iLO</li>
+            <li>RAID 1</li>
+            <li>VLAN</li>
+            <li>LACP</li>
+            <li>Windows Server 2022</li>
+            <li>Active Directory</li>
+            <li>Services Bureau à distance</li>
+            <li>Autorité de certification</li>
+            <li>ITGlue</li>
+            <li>Datto</li>
+            <li>Keeper</li>
+        </ul>
+        <br>
+    </header>
+
+</body>
+</html>

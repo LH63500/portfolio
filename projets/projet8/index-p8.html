@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo LIGUTTI - SAE 4.1 : interconnexion de deux entreprises avec des pare-feux Stormshield</title>
+    <link rel="icon" href="../../assets/uca.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../../index.html#projects"><img src="../../assets/accueil-illustration.png" alt="Retour au portfolio" class="logo-accueil"></a>
+            </div>
+            <h1>Projet n°8</h1>
+        </div>
+    </nav>
+
+    <header class="hero" id="accueil">
+        <h2>Projet n°8 : SAE 4.1 : interconnexion de deux entreprises avec des pare-feux Stormshield</h2>
+        <br>
+        <h4>Contexte :</h4>
+        <br>
+        <p>SAE 4.1 de 2e année de BUT R&T, réalisée en binôme avec Tom. Chacun administrait le pare-feu <strong>Stormshield</strong> d'une entreprise, et les deux entreprises devaient pouvoir communiquer de façon sécurisée.</p>
+        <br>
+        <h4>Objectif :</h4>
+        <br>
+        <p>Configurer, filtrer et interconnecter deux réseaux d'entreprise comprenant chacun un réseau interne et une DMZ hébergeant des serveurs DNS, web, FTP et mail.</p>
+        <br>
+        <figure class="project-figure">
+            <img src="../../assets/projet8-archi.jpg" alt="Architecture de la SAE : deux entreprises, chacune protégée par son pare-feu, avec une DMZ">
+            <figcaption>Architecture de la SAE : deux entreprises, chacune protégée par son pare-feu, avec une DMZ</figcaption>
+        </figure>
+        <br>
+        <h4>Travaux :</h4>
+        <br>
+        <p>La SAE était découpée en labs successifs :</p>
+        <br>
+        <ul>
+            <li><strong>Prise en main</strong> : accès en CLI et en interface web, paramètres système, accès SSH, sauvegarde de la configuration</li>
+            <li><strong>Objets</strong> : hôtes, réseaux, services et groupes, dont un import par fichier CSV</li>
+            <li><strong>Interfaces et routage</strong> : interfaces IN, OUT et DMZ, passerelle par défaut, routes statiques, cache DNS</li>
+            <li><strong>Translation d'adresses</strong> : NAT dynamique vers Internet et NAT statique pour publier les serveurs FTP, mail et web</li>
+            <li><strong>Filtrage</strong> : politique organisée par flux (internes, sortants, entrants)</li>
+            <li><strong>Filtrage applicatif</strong> : filtrage d'URL HTTP/HTTPS et règles SMTP</li>
+            <li><strong>Authentification</strong> : annuaire LDAP interne, comptes temporaires, parrainage</li>
+            <li><strong>VPN IPsec</strong> site à site entre les deux entreprises, puis <strong>VPN SSL</strong> pour les utilisateurs nomades</li>
+        </ul>
+        <br>
+        <h4>Outils et technologies :</h4>
+        <br>
+        <ul class="tags">
+            <li>Stormshield</li>
+            <li>NAT</li>
+            <li>Filtrage</li>
+            <li>DMZ</li>
+            <li>LDAP</li>
+            <li>VPN IPsec</li>
+            <li>VPN SSL</li>
+        </ul>
+        <br>
+    </header>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo LIGUTTI - Audit de sécurité de l'entreprise fictive Securim</title>
+    <link rel="icon" href="../../assets/uca.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="../../index.html#projects"><img src="../../assets/accueil-illustration.png" alt="Retour au portfolio" class="logo-accueil"></a>
+            </div>
+            <h1>Projet n°10</h1>
+        </div>
+    </nav>
+
+    <header class="hero" id="accueil">
+        <h2>Projet n°10 : Audit de sécurité de l'entreprise fictive Securim</h2>
+        <br>
+        <h4>Contexte :</h4>
+        <br>
+        <p>TP d'audit de sécurité en 3e année de BUT R&T, réalisé en binôme, sur une infrastructure de 8 machines virtuelles : pare-feu pfSense, contrôleur de domaine, poste client, serveur web, sonde et SIEM.</p>
+        <br>
+        <h4>Objectif :</h4>
+        <br>
+        <p>Auditer le système d'information de Securim en <strong>boîte noire</strong>, c'est-à-dire sans aucune information ni accès préalable, depuis une machine Kali Linux placée sur Internet.</p>
+        <br>
+        <figure class="project-figure">
+            <img src="../../assets/projet10-securim.jpg" alt="Architecture de l'entreprise Securim, retrouvée pendant la phase de reconnaissance">
+            <figcaption>Architecture de l'entreprise Securim, retrouvée pendant la phase de reconnaissance</figcaption>
+        </figure>
+        <br>
+        <h4>Travaux :</h4>
+        <br>
+        <ul>
+            <li><strong>Reconnaissance (OSINT)</strong> : recherche d'informations publiques sur l'entreprise et son architecture</li>
+            <li><strong>Découverte</strong> : scan du point d'entrée avec Nmap</li>
+            <li><strong>Test de la vulnérabilité Log4Shell</strong> (CVE-2021-44228) avec curl et un écouteur netcat</li>
+            <li><strong>Fuzzing</strong> du site web avec DirBuster : découverte d'une zone protégée</li>
+            <li><strong>Attaque par dictionnaire</strong> sur cette zone avec xHydra</li>
+            <li><strong>Exploitation de Log4Shell</strong> sur la nouvelle ressource et obtention d'un shell distant</li>
+            <li>Début de l'<strong>escalade de privilèges</strong></li>
+        </ul>
+        <br>
+        <p>Toutes ces attaques ont été menées uniquement dans l'environnement de TP prévu à cet effet.</p>
+        <br>
+        <h4>Outils et technologies :</h4>
+        <br>
+        <ul class="tags">
+            <li>Kali Linux</li>
+            <li>pfSense</li>
+            <li>Nmap</li>
+            <li>DirBuster</li>
+            <li>xHydra</li>
+            <li>Log4Shell</li>
+            <li>netcat</li>
+            <li>curl</li>
+        </ul>
+        <br>
+    </header>
+
+</body>
+</html>
