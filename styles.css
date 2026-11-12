@@ -773,3 +773,180 @@ footer {
   .skills-modal-sidebar {width: auto; min-width:unset; flex-direction: row; border: none; border-bottom:1px solid #e2e8f0;}
   .skills-modal-sidebar li {display:inline-block;margin-right:1rem;margin-bottom:0;}
 }
+
+/* =========================================
+   10. REFONTE 2026 : PROJETS, DIVERS, CV
+   ========================================= */
+
+/* --- Projets : carrousel à défilement --- */
+.pj-carousel {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.pj-track {
+    --per-view: 3;
+    --gap: 1.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - (var(--per-view) - 1) * var(--gap)) / var(--per-view));
+    column-gap: var(--gap);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0.5rem 0.25rem 1.5rem;
+    scrollbar-width: none;
+}
+.pj-track::-webkit-scrollbar { display: none; }
+.pj-track:focus-visible { outline: 3px solid var(--accent-blue-hover); outline-offset: 4px; border-radius: var(--radius); }
+
+.pj-card { scroll-snap-align: start; display: flex; }
+
+.pj-link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: var(--transition);
+}
+.pj-link:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+.pj-link:focus-visible { outline: 3px solid var(--accent-blue); outline-offset: 3px; }
+
+.pj-media { aspect-ratio: 16 / 10; background: var(--bg-section); overflow: hidden; }
+.pj-media img { width: 100%; height: 100%; object-fit: cover; }
+.pj-media--logo img { object-fit: contain; padding: 1.5rem; }
+
+.pj-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.25rem 1.4rem 1.4rem;
+    flex: 1;
+}
+.pj-body h3 { color: var(--accent-blue); font-size: 1.15rem; line-height: 1.3; }
+.pj-sub { color: var(--text-muted); font-size: 0.9rem; margin-top: -0.3rem; }
+.pj-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.pj-cta {
+    margin-top: auto;
+    padding-top: 0.6rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--accent-blue);
+}
+.pj-link:hover .pj-cta { text-decoration: underline; }
+
+.pj-nav { display: flex; align-items: center; justify-content: center; gap: 1.25rem; margin-top: 0.5rem; }
+.pj-nav .carousel-btn:disabled { opacity: 0.35; cursor: default; background: var(--primary-dark); }
+.pj-dots { display: flex; gap: 0.5rem; }
+.pj-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    border: none; padding: 0; cursor: pointer;
+    background: #cfd6dc;
+    transition: var(--transition);
+}
+.pj-dot[aria-current="true"] { background: var(--accent-blue); width: 26px; border-radius: 5px; }
+.pj-dot:focus-visible, .pj-nav .carousel-btn:focus-visible { outline: 3px solid var(--accent-blue-hover); outline-offset: 2px; }
+
+@media (max-width: 960px) { .pj-track { --per-view: 2; } }
+@media (max-width: 640px) {
+    .pj-track { --per-view: 1; grid-auto-columns: 85%; }
+}
+
+/* --- Divers : centres d'intérêt --- */
+.it-intro { text-align: center; color: var(--text-muted); margin: -1rem 0 2.5rem; }
+
+.it-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.it-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.it-card--wide {
+    grid-column: span 2;
+    flex-direction: row;
+}
+.it-card--wide .it-media { flex: 0 0 42%; aspect-ratio: auto; }
+
+.it-media { aspect-ratio: 16 / 10; overflow: hidden; background: var(--bg-section); }
+.it-media img { width: 100%; height: 100%; object-fit: cover; }
+.it-media--icon {
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent-blue);
+    background: linear-gradient(135deg, #eaf4fd, #e6f8f4);
+}
+
+.it-body { padding: 1.4rem 1.5rem 1.6rem; }
+.it-body h3 { color: var(--accent-blue); font-size: 1.15rem; margin-bottom: 0.5rem; }
+.it-body p { color: var(--text-main); font-size: 0.97rem; }
+.it-label { font-weight: 600; margin-top: 1rem; color: var(--primary-dark); }
+.it-songs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem; }
+.it-songs li {
+    font-size: 0.82rem;
+    background: var(--bg-section);
+    border: 1px solid #e3e8ec;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+@media (max-width: 960px) {
+    .it-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+    .it-grid { grid-template-columns: 1fr; }
+    .it-card--wide { grid-column: auto; flex-direction: column; }
+    .it-card--wide .it-media { aspect-ratio: 16 / 10; }
+}
+
+/* --- CV --- */
+.cv-panel {
+    display: grid;
+    grid-template-columns: minmax(220px, 340px) 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    padding: 2rem;
+}
+.cv-thumb img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #e3e8ec;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+.cv-thumb:hover img { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.cv-thumb:focus-visible { outline: 3px solid var(--accent-blue); outline-offset: 4px; border-radius: 6px; }
+.cv-side h3 { font-size: 1.4rem; margin-bottom: 0.6rem; }
+.cv-side p { color: var(--text-muted); margin-bottom: 1.5rem; }
+.cv-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+.cv-open { color: var(--accent-blue); font-weight: 600; }
+.cv-open:hover { text-decoration: underline; }
+
+@media (max-width: 700px) {
+    .cv-panel { grid-template-columns: 1fr; padding: 1.5rem; text-align: center; }
+    .cv-thumb { max-width: 260px; margin: 0 auto; }
+    .cv-actions { justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .pj-track { scroll-behavior: auto; }
+    .pj-link, .cv-thumb img { transition: none; }
+}
+@media (max-width: 640px) {
+    .it-card--wide .it-media { flex: none; }
+}

@@ -437,114 +437,79 @@
         <section id="projects" class="section">
             <div class="container">
                 <h2 class="section-title">Projets</h2>
-                
-                <div class="projects-carousel">
-                    <div class="carousel-track" id="track">
-                        
-                        <div class="carousel-slide">
-                            <a class="project-link" href="projets/projet6/index-p6.html">
-                                <div class="project-card-inner">
-                                    <div class="project-title">
-                                        <h3>Application sous Android Studio</h3>
-                                        <p style="color:var(--text-muted);">Projet de BUT2 en SAE32</p>
-                                    </div>
-                                    <div class="project-tags-group">
-                                        <span class="project-tag-pill">Java</span>
-                                        <span class="project-tag-pill">Sécurité</span>
-                                        <span class="project-tag-pill">Compte Rendu</span>
-                                    </div>
-                                    <img src="assets/projet6-illustration.png" alt="Illustration du projet" class="project-image">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="carousel-slide">
-                            <a class="project-link" href="projets/projet5/index-p5.html">
-                                <div class="project-card-inner">
-                                    <div class="project-title">
-                                        <h3>Projet Intégratif</h3>
-                                        <p style="color:var(--text-muted);">Projet de BUT1 en SAE204</p>
-                                    </div>
-                                    <div class="project-tags-group">
-                                        <span class="project-tag-pill">Réseaux</span>
-                                        <span class="project-tag-pill">Programmation</span>
-                                        <span class="project-tag-pill">Manipulations techniques</span>
-                                    </div>
-                                    <img src="assets/projet5-illustation.png" alt="Illustration du projet" class="project-image">
-                                    <div class="alert" style="background:#fff3cd; color:#856404; padding:5px 10px; border-radius:4px; margin-top:10px;">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="carousel-slide">
-                            <a class="project-link" href="projets/projet3/index-p3.html">
-                                <div class="project-card-inner">
-                                    <div class="project-title">
-                                        <h3>Vidéo JPO</h3>
-                                        <p style="color:var(--text-muted);">Projet de BUT1 en PPP</p>
-                                    </div>
-                                    <div class="project-tags-group">
-                                        <span class="project-tag-pill">Montage Vidéo</span>
-                                        <span class="project-tag-pill">Vulgarisation</span>
-                                    </div>
-                                    <img src="assets/projet3-illustration.jpg" alt="Illustration du projet" class="project-image">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="carousel-slide">
-                            <a class="project-link" href="projets/projet4/index-p4.html">
-                                <div class="project-card-inner">
-                                    <div class="project-title">
-                                        <h3>Téléphonie VoIP locale</h3>
-                                        <p style="color:var(--text-muted);">Projet de BUT1 - Téléphonie</p>
-                                    </div>
-                                    <div class="project-tags-group">
-                                        <span class="project-tag-pill">VoIP / SIP</span>
-                                        <span class="project-tag-pill">Manipulations techniques</span>
-                                    </div>
-                                    <img src="assets/projet4-illustration.jpg" alt="Illustration du projet" class="project-image">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="carousel-slide">
-                            <a class="project-link" href="projets/projet1/index-p1.html">
-                                <div class="project-card-inner">
-                                    <div class="project-title">
-                                        <h3>Promotion du BUT (Data)</h3>
-                                        <p style="color:var(--text-muted);">Projet de BUT1 en SAE15</p>
-                                    </div>
-                                    <div class="project-tags-group">
-                                        <span class="project-tag-pill">CSV</span>
-                                        <span class="project-tag-pill">Python</span>
-                                    </div>
-                                    <img src="assets/projet1-illustration.png" alt="Illustration du projet" class="project-image">
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="carousel-slide">
-                            <a class="project-link" href="projets/projet2/index-p2.html">
-                                <div class="project-card-inner">
-                                    <div class="project-title">
-                                        <h3>Portfolio</h3>
-                                        <p style="color:var(--text-muted);">Présentation personnelle</p>
-                                    </div>
-                                    <div class="project-tags-group">
-                                        <span class="project-tag-pill">HTML</span>
-                                        <span class="project-tag-pill">CSS</span>
-                                    </div>
-                                    <img src="assets/projet2-illustration.png" alt="Illustration du projet 2" class="project-image">
-                                </div>
-                            </a>
-                        </div>
-
-                    </div> <div class="carousel-nav">
-                        <button class="carousel-btn prev">‹</button>
-                        <div class="carousel-counter"><span id="current">1</span>/<span id="total">5</span></div>
-                        <button class="carousel-btn next">›</button>
+                <div class="pj-carousel" aria-roledescription="carrousel" aria-label="Mes projets">
+                    <ul class="pj-track" id="pj-track" tabindex="0">
+                    <li class="pj-card">
+                        <a class="pj-link" href="projets/projet6/index-p6.html">
+                            <div class="pj-media pj-media--logo"><img src="assets/projet6-illustration.png" alt="" loading="lazy"></div>
+                            <div class="pj-body">
+                                <h3>Application sous Android Studio</h3>
+                                <p class="pj-sub">BUT 2, SAE 3.2</p>
+                                <div class="pj-tags"><span class="project-tag-pill">Java</span><span class="project-tag-pill">Sécurité</span></div>
+                                <span class="pj-cta">Voir le projet</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pj-card">
+                        <a class="pj-link" href="projets/projet5/index-p5.html">
+                            <div class="pj-media"><img src="assets/projet5-illustation.png" alt="" loading="lazy"></div>
+                            <div class="pj-body">
+                                <h3>Projet intégratif</h3>
+                                <p class="pj-sub">BUT 1, SAE 2.04</p>
+                                <div class="pj-tags"><span class="project-tag-pill">Réseaux</span><span class="project-tag-pill">VLAN</span><span class="project-tag-pill">Active Directory</span></div>
+                                <span class="pj-cta">Voir le projet</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pj-card">
+                        <a class="pj-link" href="projets/projet4/index-p4.html">
+                            <div class="pj-media"><img src="assets/projet4-illustration.jpg" alt="" loading="lazy"></div>
+                            <div class="pj-body">
+                                <h3>Téléphonie VoIP locale</h3>
+                                <p class="pj-sub">BUT 1, ressource R2.04</p>
+                                <div class="pj-tags"><span class="project-tag-pill">VoIP / SIP</span><span class="project-tag-pill">OpenScape</span></div>
+                                <span class="pj-cta">Voir le projet</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pj-card">
+                        <a class="pj-link" href="projets/projet1/index-p1.html">
+                            <div class="pj-media"><img src="assets/projet1-illustration.png" alt="" loading="lazy"></div>
+                            <div class="pj-body">
+                                <h3>Promotion du BUT (Data)</h3>
+                                <p class="pj-sub">BUT 1, SAE 1.5</p>
+                                <div class="pj-tags"><span class="project-tag-pill">Python</span><span class="project-tag-pill">CSV</span></div>
+                                <span class="pj-cta">Voir le projet</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pj-card">
+                        <a class="pj-link" href="projets/projet3/index-p3.html">
+                            <div class="pj-media"><img src="assets/projet3-illustration.jpg" alt="" loading="lazy"></div>
+                            <div class="pj-body">
+                                <h3>Vidéo JPO</h3>
+                                <p class="pj-sub">BUT 1, PPP</p>
+                                <div class="pj-tags"><span class="project-tag-pill">Montage vidéo</span><span class="project-tag-pill">Vulgarisation</span></div>
+                                <span class="pj-cta">Voir le projet</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pj-card">
+                        <a class="pj-link" href="projets/projet2/index-p2.html">
+                            <div class="pj-media"><img src="assets/projet2-illustration.png" alt="" loading="lazy"></div>
+                            <div class="pj-body">
+                                <h3>Portfolio</h3>
+                                <p class="pj-sub">Présentation personnelle</p>
+                                <div class="pj-tags"><span class="project-tag-pill">HTML</span><span class="project-tag-pill">CSS</span></div>
+                                <span class="pj-cta">Voir le projet</span>
+                            </div>
+                        </a>
+                    </li>
+                    </ul>
+                    <div class="pj-nav">
+                        <button class="carousel-btn pj-prev" type="button" aria-label="Projets précédents">‹</button>
+                        <div class="pj-dots" id="pj-dots"></div>
+                        <button class="carousel-btn pj-next" type="button" aria-label="Projets suivants">›</button>
                     </div>
                 </div>
             </div>
@@ -553,64 +518,82 @@
         <section id="other" class="section section-bg">
             <div class="container">
                 <h2 class="section-title">Divers</h2>
-                <h3>Centres d'intérêt</h3>
-                <br>
-                <div class="other-grid">
-                    
-                    <div class="divers card">
-                        <h3>La musique</h3>
-                        <img src="assets/guitare-piano.jpg" alt="Guitare et Piano" class="interest-image">
-                        <img src="assets/piano.jpg" alt="piano illustration" class="interest-image">
-                        <p>Je suis autodidacte à la guitare et au piano depuis 1 an.</p>
-                        <br>
-                        <p>J'ai appris quelques riffs et début de morceau à la guitare, en voici quelques exemples de titres :</p>
-                        <ul style="text-align:left; margin-top:1rem; padding-left:1rem;">
-                            <li>• Do I Wanna Know - Arctic Monkeys</li>
-                            <li>• Parisienne Walkways - Gary Moore</li>    
-                            <li>• Smoke on the water - Deep Purple</li>
-                            <li>• Come as you are - Nirvana</li>
-                            <li>• Still loving you - Scorpions</li>
-                        </ul>
-                        <br>
-                        <p>Je joue aussi du piano, mais j'ai appris moins de chansons qu'à la guitare électrique. Le seul morceau que je sais actuellement bien jouer est : <br><em>Passacaglia - Handel/Halvorsen</em></p>
-                        <p>Le morceau que je suis en train d'apprendre est : <br><em>The Winner Takes It All - ABBA</em></p>
-                    </div>
+                <p class="it-intro">Mes centres d'intérêt en dehors des réseaux.</p>
+                <div class="it-grid">
 
-                    <div class="divers card">
-                        <h3>Activités en plein air</h3>
-                        <img src="assets/running.jpg" alt="Running" class="interest-image">
-                        <p>Je fais souvent des randonnées à pied en famille durant les weekends ou bien les vacances scolaires chez moi, à Issoire. Ces randonnées varient de 5 à 8 km.</p>
-                        <p>Nos sorties nous permettent de découvrir des paysages magnifiques, de profiter de la nature et de passer du temps de qualité ensemble. Nous aimons explorer différents sentiers, que ce soit en forêt, en montagne ou le long de rivières, et cela nous aide à rester actifs et à nous déconnecter du quotidien.</p>
-                    </div>
+                    <article class="it-card it-card--wide">
+                        <div class="it-media"><img src="assets/guitare-piano.jpg" alt="Guitare électrique" loading="lazy"></div>
+                        <div class="it-body">
+                            <h3>La musique</h3>
+                            <p>J'apprends la guitare électrique et le piano en autodidacte depuis 1 an.</p>
+                            <p class="it-label">À la guitare</p>
+                            <ul class="it-songs">
+                                <li>Do I Wanna Know, Arctic Monkeys</li>
+                                <li>Parisienne Walkways, Gary Moore</li>
+                                <li>Smoke on the Water, Deep Purple</li>
+                                <li>Come as You Are, Nirvana</li>
+                                <li>Still Loving You, Scorpions</li>
+                            </ul>
+                            <p class="it-label">Au piano</p>
+                            <ul class="it-songs">
+                                <li>Passacaglia, Handel/Halvorsen</li>
+                                <li>The Winner Takes It All, ABBA (en cours)</li>
+                            </ul>
+                        </div>
+                    </article>
 
-                    <div class="divers card">
-                        <h3>Le vélo</h3>
-                        <img src="assets/velo.jpg" alt="Cycling" class="interest-image">
-                        <p>En plus, je fais du vélo pendant mon temps libre avec une distance équivalente à celle que je fais à pied, ce qui me permet de rester en forme et de profiter de la nature d'une autre manière.</p>
-                    </div>
+                    <article class="it-card">
+                        <div class="it-media"><img src="assets/running.jpg" alt="Coureur au coucher du soleil" loading="lazy"></div>
+                        <div class="it-body">
+                            <h3>L'athlétisme</h3>
+                            <p>Je pratique l'athlétisme en club à l'ASPTT. C'est ma première saison.</p>
+                        </div>
+                    </article>
 
-                    <div class="divers card">
-                        <h3>Le badminton</h3>
-                        <img src="assets/USI.jpg" alt="Club USI" class="interest-image">
-                        <img src="assets/bad.jpg" alt="Je joue au bad" class="interest-image" id="agrandir">
-                        <p>J'ai pratiqué du badminton en club à l'USI pendant 6 ans et j'ai arrêté à l'âge de 16 ans. <br>Durant cette période, j'ai participé à plusieurs compétitions locales et régionales, ce qui m'a permis de développer des compétences techniques et stratégiques. J'ai arrêté le badminton au niveau P10 (en double), ce qui correspond à un niveau assez bas, je peux justifier ce niveau par rapport au nombre de compétitions auxquelles j'ai participé (peu de compétitions). Le badminton m'a également appris l'importance du travail d'équipe, de la persévérance et de la discipline. J'ai fait de nombreuses rencontres et j'ai noué des amitiés durables grâce à ce sport.</p>
-                    </div>
+                    <article class="it-card">
+                        <div class="it-media it-media--icon" aria-hidden="true">
+                            <svg viewBox="0 0 96 64" width="120" height="80" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="44" r="12"/><circle cx="78" cy="44" r="12"/><path d="M78 44L66 16h-8"/><path d="M62 22h-10l-6 8H30l-6-6h-8"/><path d="M30 30c-4 6-8 10-12 14"/><path d="M46 30l4 14h16"/><path d="M34 30h14c3 0 4-3 2-5l-6-3H36z" fill="currentColor"/></svg>
+                        </div>
+                        <div class="it-body">
+                            <h3>La moto</h3>
+                            <p>J'ai obtenu mon permis moto en août 2026.</p>
+                        </div>
+                    </article>
+
+                    <article class="it-card">
+                        <div class="it-media"><img src="assets/velo.jpg" alt="Balade à vélo sur un chemin" loading="lazy"></div>
+                        <div class="it-body">
+                            <h3>Randonnée et vélo</h3>
+                            <p>Je fais des randonnées de 5 à 8 km en famille autour d'Issoire, et des sorties à vélo sur des distances similaires.</p>
+                        </div>
+                    </article>
+
+                    <article class="it-card">
+                        <div class="it-media"><img src="assets/bad.jpg" alt="Match de badminton en gymnase" loading="lazy"></div>
+                        <div class="it-body">
+                            <h3>Le badminton</h3>
+                            <p>J'ai joué 6 ans en club à l'USI, jusqu'à mes 16 ans. J'ai participé à des compétitions locales et régionales, avec un classement P10 en double.</p>
+                        </div>
+                    </article>
 
                 </div>
             </div>
         </section>
 
         <section id="cv" class="section">
-            <div class="container cv-container">
+            <div class="container">
                 <h2 class="section-title">Mon CV</h2>
-                <div class="cv-wrapper">
-                    <a href="assets/CV Hugo.pdf" download="CV_LIGUTTI_Hugo.pdf" class="btn-primary" target="_blank">
-                        ⬇ Télécharger mon CV
+                <div class="cv-panel">
+                    <a class="cv-thumb" href="assets/CV%20Hugo.pdf" target="_blank" rel="noopener">
+                        <img src="assets/cv-apercu.jpg" alt="Aperçu du CV de Hugo Ligutti" loading="lazy">
                     </a>
-                    <br><br>
-                    <iframe src="assets/CV%20Hugo.pdf" class="cv-frame" title="CV Hugo" loading="lazy"></iframe>
-                    <div id="cv-fallback" style="display:none; margin-top:1rem;">
-                        <p>Si le PDF ne s'affiche pas sur votre appareil, vous pouvez le <a href="assets/CV%20Hugo.pdf" target="_blank" rel="noopener">ouvrir dans un nouvel onglet</a> ou le <a href="assets/CV%20Hugo.pdf" download>télécharger</a>.</p>
+                    <div class="cv-side">
+                        <h3>CV de Hugo Ligutti</h3>
+                        <p>Mis à jour en novembre 2026. Je recherche un stage du 5 avril au 23 juillet 2027.</p>
+                        <div class="cv-actions">
+                            <a href="assets/CV%20Hugo.pdf" download="CV_LIGUTTI_Hugo.pdf" class="btn-primary">Télécharger le CV (PDF)</a>
+                            <a href="assets/CV%20Hugo.pdf" target="_blank" rel="noopener" class="cv-open">Ouvrir dans un nouvel onglet</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -667,30 +650,43 @@
         document.addEventListener('DOMContentLoaded', syncSkillBars);
         
         // ===== CARROUSEL DES PROJETS =====
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        let totalSlides = slides.length;
-        // Update the total counter element if present
-        const totalEl = document.getElementById('total');
-        if (totalEl) totalEl.textContent = totalSlides;
-
-        function updateCarousel() {
-            const track = document.getElementById('track');
-            const offset = -currentSlide * 100;
-            track.style.transform = `translateX(${offset}%)`;
-            const currentEl = document.getElementById('current');
-            if (currentEl) currentEl.textContent = currentSlide + 1;
-        }
-
-        document.querySelector('.carousel-btn.prev').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            updateCarousel();
-        });
-
-        document.querySelector('.carousel-btn.next').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateCarousel();
-        });
+        (function() {
+            const track = document.getElementById('pj-track');
+            const dotsBox = document.getElementById('pj-dots');
+            if (!track) return;
+            const cards = Array.from(track.children);
+            const step = () => cards[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 0);
+            const perView = () => Math.max(1, Math.round(track.clientWidth / step()));
+            const pages = () => Math.max(1, cards.length - perView() + 1);
+            function renderDots() {
+                dotsBox.innerHTML = '';
+                for (let k = 0; k < pages(); k++) {
+                    const b = document.createElement('button');
+                    b.type = 'button';
+                    b.className = 'pj-dot';
+                    b.setAttribute('aria-label', 'Aller au projet ' + (k + 1));
+                    b.onclick = () => track.scrollTo({ left: k * step(), behavior: 'smooth' });
+                    dotsBox.appendChild(b);
+                }
+                sync();
+            }
+            function sync() {
+                const idx = Math.round(track.scrollLeft / step());
+                dotsBox.querySelectorAll('.pj-dot').forEach((d, k) => d.setAttribute('aria-current', k === idx ? 'true' : 'false'));
+                document.querySelector('.pj-prev').disabled = idx <= 0;
+                document.querySelector('.pj-next').disabled = idx >= pages() - 1;
+            }
+            document.querySelector('.pj-prev').onclick = () => track.scrollBy({ left: -step(), behavior: 'smooth' });
+            document.querySelector('.pj-next').onclick = () => track.scrollBy({ left: step(), behavior: 'smooth' });
+            track.addEventListener('keydown', e => {
+                if (e.key === 'ArrowRight') { e.preventDefault(); track.scrollBy({ left: step(), behavior: 'smooth' }); }
+                if (e.key === 'ArrowLeft') { e.preventDefault(); track.scrollBy({ left: -step(), behavior: 'smooth' }); }
+            });
+            let t;
+            track.addEventListener('scroll', () => { clearTimeout(t); t = setTimeout(sync, 60); });
+            window.addEventListener('resize', renderDots);
+            renderDots();
+        })();
 
                 // Contenus par compétence ("clé": description structurée pour la sidebar et le contenu)
         const skillsDetails = {
@@ -890,21 +886,6 @@
                 });
             }
 
-            // Basic fallback for CV iframe on small screens: some mobile browsers
-            // don't render PDFs in iframes. If the iframe doesn't report load
-            // within a short timeout on small viewports, show a fallback link.
-            const cvFrame = document.querySelector('.cv-frame');
-            const cvFallback = document.getElementById('cv-fallback');
-            if (cvFrame && cvFallback) {
-                let loaded = false;
-                cvFrame.addEventListener('load', () => { loaded = true; });
-                setTimeout(() => {
-                    if (!loaded && window.matchMedia('(max-width:870px)').matches) {
-                        cvFallback.style.display = 'block';
-                        cvFrame.style.display = 'none';
-                    }
-                }, 1500);
-            }
         })();
 
 
