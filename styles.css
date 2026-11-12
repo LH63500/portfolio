@@ -1104,3 +1104,12 @@ footer {
     .section { padding: 4.5rem 0; }
     .section-title { font-size: 1.9rem; margin-bottom: 2.5rem; }
 }
+
+/* --- Compétences : mises en pratique --- */
+.skills-subtitle {
+    font-size: 1.5rem;
+    margin: 3.5rem 0 1.5rem;
+    color: var(--primary-dark);
+}
+.skills-grid--extra { margin-top: 2rem; }
+.skill-bar > .tag + .toggle-button { display: block; }
